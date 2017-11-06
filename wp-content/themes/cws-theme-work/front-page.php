@@ -19,9 +19,9 @@ get_header();
 
 				<header class="text-center">
 
-					<span class="subtitle">Our Technology</span>
+					<span class="subtitle"><?php the_field('section_1_subtitle') ?></span>
 
-					<h2>Ushering in a New Era of Research &amp; Development for a Wide Range of Diseases</h2>
+					<h2><?php the_field('section_1_title') ?></h2>
 
 				</header>
 
@@ -77,7 +77,7 @@ get_header();
 
 			<div class="text-center">
 
-				<a class="lt-blue-btn btn" href="#">Learn More</a>
+				<a class="ocean-blue-border-btn btn" href="#">Learn More</a>
 
 			</div>
 
@@ -87,7 +87,7 @@ get_header();
 
 </section>
 
-<section id="home-sec-2" class="ocean-bg">
+<section id="home-sec-2" class="lt-blue-bg">
 
 	<div class="container">
 
@@ -95,9 +95,9 @@ get_header();
 
 			<header class="col-md-offset-1 col-md-10">
 
-				<span class="subtitle">Our Approach</span>
+				<span class="subtitle"><?php the_field('section_2_subtitle') ?></span>
 
-				<h2>Partnering with pharmaceutical, diagnostics, life science and biotech companies to more effectively target disease at a genomic level</h2>
+				<h2><?php the_field('section_2_title') ?></h2>				
 
 			</header>
 
@@ -107,19 +107,17 @@ get_header();
 
 			<div class="col-md-offset-1 col-md-6">
 
-				<p>Nashville Biosciences is leveraging its unique resources and proprietary analytical methods to help improve the prevention, diagnosis and treatment of a wide range of diseases.</p>
+				<?php the_field('section_2_content') ?>
 
-				<p>Our approach helps to save years of R&amp;D efforts, streamline diagnostic development, prioritize indication and patient subpopulations to improve probability of treatment success, and identify potential side effects sooner to help improve human health.</p>
-
-				<a class="lt-blue-btn btn" href="#">Learn More</a>
+				<a class="ocean-blue-border-btn btn" href="#">Learn More</a>
 
 			</div>
 
 			<div class="col-md-4">
 
-				<div class="pl-60">
+				<div class="text-center">
 
-					<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/home/circle-thing.png" data-at2x="<?php bloginfo('template_url');?>/images/home/circle-thing@2x.png" />
+					<img class="circle-target"  src="<?php bloginfo('template_url');?>/images/home/circle-thing.png" data-at2x="<?php bloginfo('template_url');?>/images/home/circle-thing@2x.png" />
 
 				</div>
 
@@ -139,13 +137,13 @@ get_header();
 
 			<header class="col-md-6 center-col text-center">
 
-				<h2>Make An Impact</h2>
+				<h2><?php the_field('section_3_title') ?></h2>
 
-				<p>Nashville Biosciences was founded to bring this new approach to life science research and development.</p>
+				<p><?php the_field('section_3_snippet') ?></p>
 
 			</header>
 
-			<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/home/circles.png" data-at2x="<?php bloginfo('template_url');?>/images/home/circles@2x.png" />
+			<img class="circles"  src="<?php bloginfo('template_url');?>/images/home/circles.png" data-at2x="<?php bloginfo('template_url');?>/images/home/circles@2x.png" />
 
 		</div>
 
@@ -153,9 +151,9 @@ get_header();
 
 			<div class="col-md-6 no-pad center-col text-center">
 
-				<p>Nashville Biosciences has collaborated with multiple partners to prioritize new drug targets, develop new molecular tests to help match individuals with treatments that are most likely to work for them and characterize cohorts of patients with poorly treated conditions to identify new treatment options.</p>
+				<?php the_field('section_3_content') ?>
 
-				<a class="lt-blue-btn btn" href="#">Learn More</a>
+				<a class="ocean-blue-border-btn btn" href="#">Learn More</a>
 
 			</div>
 

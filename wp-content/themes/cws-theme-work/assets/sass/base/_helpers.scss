@@ -1,19 +1,25 @@
 
 
 /**Backgrounds**/
+.lt-blue-bg {
+  background-color: $lt-blue;
+  color: $white;
+}
 
 /**Animations**/
 
 /**Custom Classes**/
 
-.pull {
-  &-right {
-    @media screen and (min-width: 992px) {
-      &-md {
-        float: right !important;
-      }
-    }
-  }
+.yellow {
+  color: $yellow;
+}
+
+.blue {
+  color: $lt-blue;
+}
+
+.red {
+  color: $red;
 }
 
 .no-p {

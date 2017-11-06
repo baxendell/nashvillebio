@@ -10,7 +10,7 @@
 
             <a class="site-logo" href="/">
 
-              <img class="img-responsive"  src="<?php include('images/nashville-bio-logo.svg');?>"/>
+              <?php include('images/nashville-bio-logo.svg');?>
 
             </a>
 
@@ -30,7 +30,11 @@
 
           <div class="col-md-2">
 
-            <!--linkedin-->
+            <a href="#" target="_blank" class="linked-in-icon">
+
+              <img src="<?php bloginfo('template_url');?>/images/icons/linkdedin-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/linkdedin-icon@2x.png" />
+
+            </a>
 
           </div>
 
@@ -44,7 +48,7 @@
 
             <a class="powered-by" href="#" target="_blank">
 
-              <img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/icons/linkededin-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/linkededin-icon@2x.png" />
+              <img src="<?php bloginfo('template_url');?>/images/vanderbilt.png" data-at2x="<?php bloginfo('template_url');?>/images/vanderbilt@2x.png" />
 
             </a>
 

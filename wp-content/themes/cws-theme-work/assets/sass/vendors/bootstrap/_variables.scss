@@ -16,9 +16,15 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$teal-blue:				#007053 !default;
-$dark-teal-blue:				#edc505 !default;
-$light-teal:				#eddb08 !default;
+$dk-blue:				#012635 !default;
+$dk-blue-lt:				#034e63 !default;
+$lt-blue:				#1297a3 !default;
+$ocean-blue:            #91d6c8 !default;
+
+$yellow:				#ffbf3c !default;
+
+
+
 $yellow-button-text:		#070f17 !default;
 
 $light-gray-banner-bg:		#f2f3f3 !default;
@@ -27,20 +33,20 @@ $light-gray-banner-text:	#1e2a32 !default;
 $heading-text-color:		#1e2a31 !default;
 $body-text-color:			#56544f !default;
 
-$brand-primary:         	$teal-blue !default;
+$brand-primary:         	$dk-blue !default;
 $brand-success:         	#5cb85c !default;
 $brand-info:            	#5bc0de !default;
-$brand-warning:         	$dark-teal-blue !default;
+$brand-warning:         	$dk-blue-lt !default;
 $brand-danger:          	#d9534f !default;
-$brand-yellow:				$dark-teal-blue !default;
+$brand-yellow:				$dk-blue-lt !default;
 
 $brand-well-bg:				#f2f2f2;
 
-$brand-nav-bg:				#fff !default;
-$brand-nav-default-color:	#3e484e !default;
-$brand-nav-link-color: #777 !default;
-$brand-nav-link-color-hover: #333 !default;
-$brand-nav-link-active-color: #555 !default;
+$brand-nav-bg:				$dk-blue !default;
+$brand-nav-default-color:	$ocean-blue !default;
+$brand-nav-link-color: $ocean-blue !default;
+$brand-nav-link-color-hover: $yellow !default;
+$brand-nav-link-active-color: $yellow !default;
 $brand-nav-link-disabled-color: #ccc !default;
 
 
@@ -80,7 +86,7 @@ $font-family-base:        	 $font-family-body !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
-$font-size-base:          18px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 

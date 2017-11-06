@@ -2,14 +2,34 @@
 
 .btn {
 	display: inline-block;
-	border-radius: 5px;
-	@include rem-font-size(20px);
+	border-radius: 50px;
 	text-decoration: none;
-	@media screen and (min-width: 320px){
-		font-size: 18px
-	}
-	@media screen and (min-width: 480px){
-		@include rem-font-size(20px);
+	padding: 8px 40px;
+	text-align: center;
+	font-weight: 700;
+	transition: .3s linear;
+	border: 2px solid;
+}
+
+.blue-border-btn {
+	color: $lt-blue;
+	border-color: $lt-blue;
+
+	#banner & {
+		color: $white;
 	}
 
+	&:hover, &:focus {
+		box-shadow: inset 0px 0px 180px $lt-blue;
+		color: $white;
+	}
+}
+
+.ocean-blue-border-btn {
+	color: $lt-blue;
+	border-color: $ocean-blue;
+
+	&:hover, &:focus {
+		box-shadow: inset 0px 0px 180px $ocean-blue;
+	}
 }

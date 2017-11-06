@@ -1,1 +1,30 @@
 /* Footer Styles */
+
+#site-footer {
+	background-color: $dk-blue-lt;
+	color: $white;
+	padding: 50px 0;
+
+	a {
+		color: $white;
+
+		&:hover, &:focus {
+			color: $yellow;
+		}
+	}
+
+	.col-md-3 {
+		p {
+			margin-top: 20px;
+		}
+	}
+
+	.linked-in-icon {
+		margin-top: 28px;
+		display: block;
+	}
+}
+
+.copyright {
+	margin: 28px 0;
+}

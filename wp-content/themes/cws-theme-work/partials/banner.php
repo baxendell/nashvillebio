@@ -15,11 +15,19 @@
 
 				<h1 class="banner-title">
 
-					Leveraging real-world clinical and genomic data to advance the <span class="yellow">discovery</span> <span class="blue">and</span> <span class="red">development</span> of new, more personalized therapeutics and diagnostics.
+					<?php if(get_field('banner_title')) {
+						the_field('banner_title');
+						} else {
+							the_title();
+						} 
+					?>
 
 				</h1>
+				<?php if(is_front_page()): ?>
 
 				<a class="blue-border-btn btn" href="#">Learn More</a>
+
+				<?php endif ?>
 
 			</div>
 

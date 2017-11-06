@@ -1,4 +1,28 @@
 /**Header**/
 
+
+#main-header {
+	background-color: $dk-blue;
+	padding: 17px 0;
+	background-repeat: no-repeat;
+	background-position: center top;	
+
+	.home & {
+		background-image: url('../../images/banners/home-banner.jpg');
+	}
+
+	.page-template-about-us & {
+		background-image: url('../../images/banners/about-banner.jpg');
+	}
+}
+
+.site-logo {
+	width: 203px;
+	height: 98px;
+	display: block;
+	@media screen and (min-width: 1200px) {
+		margin-left: -60px;
+	}
+}
 /*Mobile Only*/
 

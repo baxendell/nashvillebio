@@ -16,10 +16,17 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$teal-blue:					#147195 !default;
-$dark-teal-blue:			#03415d !default;
-$light-teal:				#7ab7c1 !default;
-$yellow-button-text:		#070f17 !default;
+$dk-blue:					#012635 !default;
+$dk-blue-lt:			#034e63 !default;
+$lt-blue:				#1297a3 !default;
+$ocean-blue: #91d6c8;
+
+$red: #f95741;
+$yellow: #ffbf3c;
+
+
+
+$yellow-button-text:		$white !default;
 
 $light-gray-banner-bg:		#f2f3f3 !default;
 $light-gray-banner-text:	#1e2a32 !default;
@@ -27,20 +34,20 @@ $light-gray-banner-text:	#1e2a32 !default;
 $heading-text-color:		#1e2a31 !default;
 $body-text-color:			#56544f !default;
 
-$brand-primary:         	$teal-blue !default;
+$brand-primary:         	$dk-blue !default;
 $brand-success:         	#5cb85c !default;
 $brand-info:            	#5bc0de !default;
-$brand-warning:         	$dark-teal-blue !default;
+$brand-warning:         	$dk-blue-lt !default;
 $brand-danger:          	#d9534f !default;
-$brand-yellow:				$dark-teal-blue !default;
+$brand-yellow:				$dk-blue-lt !default;
 
 $brand-well-bg:				#f2f2f2;
 
 $brand-nav-bg:				#fff !default;
-$brand-nav-default-color:	#3e484e !default;
-$brand-nav-link-color: #777 !default;
-$brand-nav-link-color-hover: #333 !default;
-$brand-nav-link-active-color: #555 !default;
+$brand-nav-default-color:	$dk-blue !default;
+$brand-nav-link-color: $ocean-blue !default;
+$brand-nav-link-color-hover: $yellow !default;
+$brand-nav-link-active-color: $yellow !default;
 $brand-nav-link-disabled-color: #ccc !default;
 
 
@@ -67,12 +74,12 @@ $link-hover-decoration: underline !default;
 //== Typography
 //
 //
-$font-family-sans-serif:  	 "Asap", sans-serif !default;
-$font-family-serif:       	 "Arapey", serif !default;
+$font-family-sans-serif:  	 "proxima-nova", sans-serif !default;
+$font-family-serif:       	 "proxima-nova", serif !default;
 
-$font-family-body:	  	   "Asap", sans-serif !default;
-$font-family-body-condenced:    "Asap", sans-serif !default;
-$font-family-heading:	           "Arapey", serif !default;
+$font-family-body:	  	   "proxima-nova", sans-serif !default;
+$font-family-body-condenced:    "proxima-nova", sans-serif !default;
+$font-family-heading:	           "proxima-nova", serif !default;
 
 $font-family-base:        	 $font-family-body !default;
 
