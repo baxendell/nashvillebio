@@ -78,8 +78,11 @@ get_header() ?>
 				    <div role="tabpanel" class="tab-pane fade in active" id="mgmt">
 
 				    	<div class="team-member">
+				    		<div class="team-image">
 
-				    		<!--image-->
+				    			<!--image-->
+
+			    			</div>
 				    		<h3><!--name--></h3>
 				    		<h4><!--job title--></h4>
 
