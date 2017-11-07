@@ -1,1 +1,48 @@
 /**About Page**/
+
+
+#history {
+	position: relative;
+	h2 {
+		&:after {
+			height: 5px;
+			width: 70px;
+			content: '';
+			background-color: $ocean-blue;
+			border-radius: 50px;
+			display: block;
+			margin: 33px 0 54px;
+		}
+
+		&:before {
+			height: 5px;
+			width: 40px;
+			content: '';
+			background-color: #0095a7;
+			border-radius: 50px;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.left-pill, .right-pill {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 350px;
+}
+
+.left-pill {
+	left: 0;
+	width: 215px;
+}
+
+.right-pill {
+	right: 0;
+	width: 289px;
+	border-radius: 50px 0 0 50px;
+	background-color: #009eb9;
+}

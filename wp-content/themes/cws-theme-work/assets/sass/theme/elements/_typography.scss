@@ -32,10 +32,14 @@ h2 {
 	@include rem-font-size(36px);
 	line-height: 1.2;
 	margin-top: 10px;
+	position: relative;
 }
 
 h3 {
-
+	color: $dk-blue-lt;
+	font-weight: 300;
+	@include rem-font-size(24px);
+	line-height: 1.333;
 }
 
 h4 {
@@ -44,13 +48,14 @@ h4 {
 h5 {
 }
 
-a {    
+a {
+	
+	color: $lt-blue;
+	text-decoration: none;
 }
 
 p {
-	.entry-content & {
-		margin-bottom: 28px;
-	}
+
 }
 
 ul {
