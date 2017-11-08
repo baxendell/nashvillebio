@@ -124,10 +124,6 @@ get_header() ?>
 
 <section id="publications">
 
-	<div class="left-pill"></div>
-
-	<div class="right-pill"></div>
-
 	<div class="container">
 
 		<div class="row">

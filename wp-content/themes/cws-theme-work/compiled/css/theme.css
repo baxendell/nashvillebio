@@ -8835,11 +8835,11 @@ a {
 }
 
 /**About Page**/
-#history {
+#history, #publications {
   position: relative;
 }
 
-#history h2:after {
+#history h2:after, #publications h2:after {
   height: 5px;
   width: 105px;
   content: '';
@@ -8849,7 +8849,7 @@ a {
   margin: 33px 0 54px;
 }
 
-#history h2:before {
+#history h2:before, #publications h2:before {
   height: 5px;
   width: 40px;
   content: '';
@@ -8859,6 +8859,16 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+#publications {
+  background-image: url("../../images/about/publications-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#publications h3 {
+  font-weight: 400;
 }
 
 .left-pill, .right-pill {
