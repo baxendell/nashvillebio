@@ -6,16 +6,7 @@ get_header() ?>
 
 <section id="history">
 
-	<div class="left-pill">
-		<svg 
-		 xmlns="http://www.w3.org/2000/svg"
-		 xmlns:xlink="http://www.w3.org/1999/xlink"
-		 width="575px" height="350px">
-		<path fill-rule="evenodd"  fill="rgb(135, 212, 196)"
-		 d="M350.000,0.000 L800.000,0.000 C993.300,0.000 1150.000,156.701 1150.000,350.000 C1150.000,543.300 993.300,700.000 800.000,700.000 L350.000,700.000 C156.701,700.000 -0.000,543.300 -0.000,350.000 C-0.000,156.701 156.701,0.000 350.000,0.000 Z"/>
-		</svg>
-
-	</div>
+	<div class="left-pill"></div>
 
 	<div class="right-pill"></div>
 
@@ -57,6 +48,8 @@ get_header() ?>
 
 					<h2><?php the_field('team_title') ?></h2>
 
+					<p><?php the_field('team_excerpt') ?></p>
+
 				</header>
 
 				 <!-- Nav tabs -->
@@ -75,50 +68,50 @@ get_header() ?>
 			<div class="col-md-offset-1 col-md-11">
 
 				<div class="tab-content">
-				    <div role="tabpanel" class="tab-pane fade in active" id="mgmt">
 
+					<?php
+					$_terms = get_terms( array('team_category') );
+					$i = 0;
+					foreach ($_terms as $term) :
+						$i++;
+					    $term_slug = $term->slug;
+					    $_posts = new WP_Query( array(
+					                'post_type'         => 'team',
+					                'posts_per_page'    => -1,
+					                'orderby' => 'menu_order',
+					                'order' => 'ASC',
+					                'tax_query' => array(
+					                    array(
+					                        'taxonomy' => 'team_category',
+					                        'field'    => 'slug',
+					                        'terms'    => $term_slug,
+					                    ),
+					                ),
+					            ));
+
+					    if($i == 1) {
+					    	$active = 'active';
+					    }
+			            ?>
+				    <div role="tabpanel" class="tab-pane fade in <?php echo $active; ?>" id="<?php echo $term->slug; ?>">
+					    <?php
+					    if( $_posts->have_posts() ) : while ( $_posts->have_posts() ) : $_posts->the_post();
+					        ?>
 				    	<div class="team-member">
 				    		<div class="team-image">
 
-				    			<!--image-->
+				    			<?php the_post_thumbnail( array(211, 211) ); ?>
 
 			    			</div>
-				    		<h3><!--name--></h3>
-				    		<h4><!--job title--></h4>
+				    		<h3><?php the_title() ?></h3>
+				    		<h4><?php the_field('position') ?></h4>
 
-				    		<a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				    		<a class="linkedin" href="<?php the_field('linkedin_link') ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 
 			    		</div>
-				    	
+					        <?php endwhile; endif; wp_reset_postdata(); ?>
 				    </div>
-
-				    <div role="tabpanel" class="tab-pane fade" id="board">
-
-				    	<div class="team-member">
-
-				    		<!--image-->
-				    		<h3><!--name--></h3>
-				    		<h4><!--job title--></h4>
-
-				    		<a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-			    		</div>
-
-				    	
-				    </div>
-				    <div role="tabpanel" class="tab-pane fade" id="sab">
-
-				    	<div class="team-member">
-
-				    		<!--image-->
-				    		<h3><!--name--></h3>
-				    		<h4><!--job title--></h4>
-
-				    		<a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-			    		</div>
-
-		    		</div>
+				    <?php endforeach; ?>
 
 			    </div>
 		  	</div>

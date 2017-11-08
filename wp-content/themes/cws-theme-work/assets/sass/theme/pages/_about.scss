@@ -6,7 +6,7 @@
 	h2 {
 		&:after {
 			height: 5px;
-			width: 70px;
+			width: 105px;
 			content: '';
 			background-color: $ocean-blue;
 			border-radius: 50px;
@@ -33,16 +33,137 @@
 	top: 50%;
 	transform: translateY(-50%);
 	height: 350px;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .left-pill {
 	left: 0;
 	width: 215px;
+	background-image: url('../../images/about/left-bean.png');
 }
 
 .right-pill {
 	right: 0;
 	width: 289px;
 	border-radius: 50px 0 0 50px;
-	background-color: #009eb9;
+	background-image: url('../../images/about/right-bean.png');
 }
+
+#team {
+	color: $white;
+	padding-bottom: 12px;
+	.subtitle {
+		color: #96dad0;
+	}
+
+	h2 {
+		color: $white;
+
+		&:after {
+			height: 5px;
+			width: 105px;
+			content: '';
+			background-color: $ocean-blue;
+			border-radius: 50px;
+			display: block;
+			margin: 33px 0 54px;
+		}
+
+		&:before {
+			height: 5px;
+			width: 40px;
+			content: '';
+			background-color: $dk-blue-lt;
+			border-radius: 50px;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+}
+
+.nav-tabs {
+	border: none;
+}
+
+.nav-tabs > li > a {
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	color: $ocean-blue;
+	border: 1px solid $ocean-blue;
+	border-radius: 50px;
+	padding: 0 22px;
+	margin-right: 10px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: $red;
+	border-color: $red;
+	color: $white;
+}
+
+.tab-content {
+	margin-top: 52px;
+}
+
+.team-member {
+	width: 211px;
+	text-align: center;
+	margin-bottom: 34px;
+	@media screen and (min-width: 768px) {
+		float: left;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-right: 180px;
+
+		&:nth-of-type(3n-0) {
+			margin-right: 0;
+		}
+	}
+
+	h3 {
+		@include rem-font-size(14px);
+		font-weight: 600;
+		color: $white;
+		margin-top: 8px;
+		margin-bottom: 6px;
+	}
+
+	h4 {
+		@include rem-font-size(12px);
+		font-weight: 400;
+		color: $white;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	.linkedin {
+		display: inline-block;
+	}
+}
+
+.fa-linkedin {
+	background-image: url('../../images/linkedin-logo.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 24px;
+	height: 23px;
+}
+
+.team-image {
+	width: 211px;
+	height: 211px;
+	border-radius: 100%;
+	background-color: #026785;
+
+	img {
+		border-radius: 100%;
+		width: 100%;
+		height: 100%;
+	}
+}
+
