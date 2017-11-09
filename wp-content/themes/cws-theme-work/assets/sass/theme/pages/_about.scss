@@ -45,12 +45,20 @@
 	height: 350px;
 	background-size: 100%;
 	background-repeat: no-repeat;
+
+	#biovu & {
+		top: 347px;
+	}
 }
 
 .left-pill {
 	left: 0;
 	width: 215px;
 	background-image: url('../../images/about/left-bean.png');
+
+	#biovu & {
+		background-image: url('../../images/tech/left-bean.png');
+	}
 }
 
 .right-pill {
@@ -58,6 +66,10 @@
 	width: 289px;
 	border-radius: 50px 0 0 50px;
 	background-image: url('../../images/about/right-bean.png');
+
+	#biovu & {
+		background-image: url('../../images/tech/right-bean.png');
+	}
 }
 
 #team {

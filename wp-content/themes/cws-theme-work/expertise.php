@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Technology
+ * Template Name: Expertise
  */
 get_header() ?>
 

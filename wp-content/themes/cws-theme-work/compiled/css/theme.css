@@ -7499,6 +7499,10 @@ td {
   color: #fff;
 }
 
+.gray-bg {
+  background-color: #f7f7f7;
+}
+
 /**Animations**/
 /**Custom Classes**/
 .yellow {
@@ -7672,6 +7676,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .entry-content ol {
   list-style: none;
   padding-left: 35px;
@@ -7770,6 +7778,10 @@ a {
 
 .page-template-about-us #main-header {
   background-image: url("../../images/banners/about-banner.jpg");
+}
+
+.page-template-technology #main-header {
+  background-image: url("../../images/banners/technology-bg.jpg");
 }
 
 .site-logo {
@@ -8882,10 +8894,18 @@ a {
   background-repeat: no-repeat;
 }
 
+#biovu .left-pill, #biovu .right-pill {
+  top: 347px;
+}
+
 .left-pill {
   left: 0;
   width: 215px;
   background-image: url("../../images/about/left-bean.png");
+}
+
+#biovu .left-pill {
+  background-image: url("../../images/tech/left-bean.png");
 }
 
 .right-pill {
@@ -8893,6 +8913,10 @@ a {
   width: 289px;
   border-radius: 50px 0 0 50px;
   background-image: url("../../images/about/right-bean.png");
+}
+
+#biovu .right-pill {
+  background-image: url("../../images/tech/right-bean.png");
 }
 
 #team {
@@ -9362,8 +9386,102 @@ section {
   margin-top: 35px;
 }
 
-/* Legal Services Page Styles */
-/* Locations Page-Section Styles */
+/* Tech Page Styles */
+#biovu, #phewas {
+  position: relative;
+}
+
+#biovu h2:after, #phewas h2:after {
+  height: 5px;
+  width: 105px;
+  content: '';
+  background-color: #034e63;
+  border-radius: 50px;
+  display: block;
+  margin: 33px 0 54px;
+}
+
+#biovu h2:before, #phewas h2:before {
+  height: 5px;
+  width: 40px;
+  content: '';
+  background-color: #87d4c4;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#in-depth {
+  margin-top: 50px;
+}
+
+#in-depth h2:before, #in-depth h2:after {
+  display: none;
+}
+
+.in-depth-grid {
+  max-width: 993px;
+  margin: 0 auto 52px;
+}
+
+.in-depth-item {
+  background-color: #034e63;
+  color: #009eb9;
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 52px 20px;
+  width: 18%;
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+  height: 217px;
+  overflow: hidden;
+}
+
+.in-depth-item:last-of-type {
+  margin-right: 0;
+}
+
+.in-depth-item h3 {
+  color: #fff;
+  font-size: 50px;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  line-height: normal;
+}
+
+.in-depth-item h3 span {
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+
+.in-depth-item p {
+  line-height: normal;
+}
+
+.disclaimer-box {
+  border: 2px solid #f7f7f7;
+  border-radius: 10px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #0095a7;
+  padding: 46px 56px;
+}
+
+#phewas h2:before {
+  background-color: #87d4c4;
+}
+
+#phewas h2:after {
+  background-color: #034e63;
+}
+
+/* Expertise Page Styles */
 /**Single Practice**/
 
 /*# sourceMappingURL=theme.css.map */
