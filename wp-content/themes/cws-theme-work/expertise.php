@@ -18,9 +18,7 @@ get_header() ?>
 
 				<header>
 
-					<span class="subtitle"><?php the_field('biovu_subtitle') ?></span>
-
-					<h2><?php the_field('biovu_title') ?></h2>
+					<h2><?php the_field('offering_title') ?></h2>
 
 				</header>
 
@@ -38,62 +36,39 @@ get_header() ?>
 
 		<div class="row">
 
-			<div id="in-depth">
+			<div class="col-md-offset-1 col-md-5">
 
-				<h2 class="text-center">An In-depth look at BioVU</h2>
+				<div class="pr-40">
 
-				<div class="in-depth-grid clearfix">
+					<div class="border-box">
 
-					<div class="in-depth-item">
+						<i class="compass-icon"></i>
 
-						<h3>2.6<span>M</span> </h3>
-						<p>De-identified Clinical<br/> Record Accessible</p>
+						<h3><!--title--></h3>
 
-					</div>
-
-					<div class="in-depth-item">
-
-						<h3>250<span>K</span> </h3>
-						<p>Clinical records with linked DNA sample and potential for plasma collection</p>
-
-					</div>
-
-					<div class="in-depth-item">
-
-						<h3>10 <span>Years</span> </h3>
-						<p>Average Length of<br/> Clinical Data</p>
-
-					</div>
-
-					<div class="in-depth-item">
-
-						<h3>$50<span>M+</span> </h3>
-						<p>invested to create BioVU over the last 10 years</p>
-
-					</div>
-
-
-					<div class="in-depth-item">
-
-						<h3>180 </h3>
-						<p>Peer-reviewed publications showing utility of BioVU and related methods</p>
+						<!--box content-->
 
 					</div>
 
 				</div>
-
-				<div class="col-md-9 col-md-offset-1">
-
-					<p>Better understanding the mechanisms of disease can help scientists discover new treatment approaches and preventative measures; successfully tackling this breadth of disease is only possible with a dataset like BioVU.</p>
-
-				</div>
-
 
 			</div>
 
-			<div class="col-md-9 col-md-offset-1">
+			<div class="col-md-offset-1 col-md-5">
 
-				<?php the_field('biovu_content') ?>
+				<div class="pr-40">
+
+					<div class="border-box">
+
+						<i class="compass-icon"></i>
+
+						<h3><!--title--></h3>
+
+						<!--box content-->
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -101,21 +76,11 @@ get_header() ?>
 
 		<div class="row">
 
-			<div class="col-md-7 center-col">
+			<div id="projects" class="col-md-6 center-col text-center">
 
-				<div class="disclaimer-box">
+				<h2>Example Projects</h2>
 
-					<p>Records are linked to genetic samples through natural language processing to generate novel insights</p>
-
-					<p>BioVU is unbiased, in that all diseases are included, in contrast to most clinical trials that exclude individuals with complex comorbidities or elderly patients</p>
-
-					<p>Prospectively collected and stored DNA greatly reduces timeline to identify patient samples</p>
-
-					<p>BioVU is EMR-derived, enabling real-world phenotypes to be derived electronically in a highly cost-efficient manner</p>
-
-					<p>Unique algorithms identify phenotypes through combination of billing codes, clinical notes, medications, and lab/test results</p>
-
-				</div>
+				<!--projects content-->
 
 			</div>
 
