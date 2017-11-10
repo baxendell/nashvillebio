@@ -52,6 +52,18 @@ a {
 	
 	color: $lt-blue;
 	text-decoration: none;
+
+	&[href^="mailto"] {
+		color: $red;
+
+		&:hover, &:focus {
+			color: $dk-blue-lt;
+		}
+	}
+	
+	&:hover, &:focus {
+		color: $dk-blue-lt;
+	}	
 }
 
 p {

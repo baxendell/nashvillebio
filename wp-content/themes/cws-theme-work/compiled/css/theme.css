@@ -7575,6 +7575,12 @@ td {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .pr-40 {
+    padding-right: 40px;
+  }
+}
+
 .center-col {
   float: none;
   margin: 0 auto;
@@ -7674,6 +7680,18 @@ h3 {
 a {
   color: #1297a3;
   text-decoration: none;
+}
+
+a[href^="mailto"] {
+  color: #f95741;
+}
+
+a[href^="mailto"]:hover, a[href^="mailto"]:focus {
+  color: #034e63;
+}
+
+a:hover, a:focus {
+  color: #034e63;
 }
 
 p {
@@ -7782,6 +7800,10 @@ p {
 
 .page-template-technology #main-header {
   background-image: url("../../images/banners/technology-bg.jpg");
+}
+
+.page-template-expertise #main-header {
+  background-image: url("../../images/banners/expertise-banner.jpg");
 }
 
 .site-logo {
@@ -8847,11 +8869,11 @@ p {
 }
 
 /**About Page**/
-#history, #publications {
+#history, #publications, #offerings {
   position: relative;
 }
 
-#history h2:after, #publications h2:after {
+#history h2:after, #publications h2:after, #offerings h2:after {
   height: 5px;
   width: 105px;
   content: '';
@@ -8861,7 +8883,7 @@ p {
   margin: 33px 0 54px;
 }
 
-#history h2:before, #publications h2:before {
+#history h2:before, #publications h2:before, #offerings h2:before {
   height: 5px;
   width: 40px;
   content: '';
@@ -8894,29 +8916,82 @@ p {
   background-repeat: no-repeat;
 }
 
-#biovu .left-pill, #biovu .right-pill {
+#biovu .left-pill, #offerings .left-pill, #biovu .right-pill, #offerings .right-pill {
   top: 347px;
 }
 
 .left-pill {
   left: 0;
   width: 215px;
-  background-image: url("../../images/about/left-bean.png");
+  background-color: #87d4c4;
+  border-radius: 0 172px 172px 0;
 }
 
 #biovu .left-pill {
-  background-image: url("../../images/tech/left-bean.png");
+  background-color: #f9b021;
+}
+
+#offerings .left-pill {
+  background-color: #008295;
+}
+
+#careers .left-pill, #contact .left-pill {
+  background-color: #f95741;
 }
 
 .right-pill {
   right: 0;
   width: 289px;
-  border-radius: 50px 0 0 50px;
-  background-image: url("../../images/about/right-bean.png");
+  border-radius: 180px 0 0 180px;
+  background-color: #009eb9;
+  overflow: hidden;
 }
 
-#biovu .right-pill {
-  background-image: url("../../images/tech/right-bean.png");
+.right-pill:before {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  border-radius: 100%;
+  content: '';
+  right: -200px;
+  background-color: #f9b021;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#biovu .right-pill, #contact .right-pill {
+  background-color: #87d4c4;
+}
+
+#biovu .right-pill:before, #contact .right-pill:before {
+  background-color: #008295;
+}
+
+#expertise .right-pill {
+  background-color: #f9b021;
+}
+
+#expertise .right-pill:before {
+  background-color: #f95741;
+}
+
+#careers .right-pill {
+  background-color: #008599;
+}
+
+#careers .right-pill:before {
+  background-color: #87d4c4;
+}
+
+#partnering .right-pill {
+  background-color: #008599;
+}
+
+#partnering .right-pill:before {
+  background-color: #f95741;
 }
 
 #team {
@@ -9482,6 +9557,86 @@ section {
 }
 
 /* Expertise Page Styles */
+#offerings {
+  position: relative;
+  color: #8a8a8a;
+}
+
+#offerings h2:after {
+  height: 5px;
+  width: 105px;
+  content: '';
+  background-color: #f9b021;
+  border-radius: 50px;
+  display: block;
+  margin: 33px 0 54px;
+}
+
+#offerings h2:before {
+  height: 5px;
+  width: 40px;
+  content: '';
+  background-color: #f95741;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.border-box {
+  border: 2px solid #f7f7f7;
+  border-radius: 10px;
+  position: relative;
+  padding: 56px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.border-box h3 {
+  margin-bottom: 25px;
+}
+
+#offerings .border-box {
+  min-height: 392px;
+}
+
+.compass-icon {
+  background-image: url("../../images/icons/compass-icon.png");
+}
+
+.pill-icon {
+  background-image: url("../../images/icons/pill-icon.png");
+}
+
+.pill-icon, .compass-icon {
+  height: 146px;
+  width: 146px;
+}
+
+.border-box .pill-icon, .border-box .compass-icon {
+  position: absolute;
+  top: -73px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#projects {
+  margin-top: 58px;
+}
+
+#projects h2:before {
+  display: none;
+}
+
+#projects h2:after {
+  background-color: #f95741;
+  width: 70px;
+  margin: 33px auto 54px;
+}
+
 /**Single Practice**/
 
 /*# sourceMappingURL=theme.css.map */
