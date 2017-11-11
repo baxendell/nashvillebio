@@ -8869,11 +8869,11 @@ p {
 }
 
 /**About Page**/
-#history, #publications, #offerings {
+#history, #publications, #offerings, #careers {
   position: relative;
 }
 
-#history h2:after, #publications h2:after, #offerings h2:after {
+#history h2:after, #publications h2:after, #offerings h2:after, #careers h2:after {
   height: 5px;
   width: 105px;
   content: '';
@@ -8883,7 +8883,7 @@ p {
   margin: 33px 0 54px;
 }
 
-#history h2:before, #publications h2:before, #offerings h2:before {
+#history h2:before, #publications h2:before, #offerings h2:before, #careers h2:before {
   height: 5px;
   width: 40px;
   content: '';
@@ -8916,7 +8916,7 @@ p {
   background-repeat: no-repeat;
 }
 
-#biovu .left-pill, #offerings .left-pill, #biovu .right-pill, #offerings .right-pill {
+#biovu .left-pill, #offerings .left-pill, .left-pill #careers, #biovu .right-pill, #offerings .right-pill, .right-pill #careers {
   top: 347px;
 }
 
@@ -9599,6 +9599,7 @@ section {
 
 #offerings .border-box {
   min-height: 392px;
+  margin-top: 60px;
 }
 
 .compass-icon {
@@ -9637,6 +9638,159 @@ section {
   margin: 33px auto 54px;
 }
 
-/**Single Practice**/
+#projects .nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
+#projects .nav-tabs > li {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+#projects .nav-tabs > li h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+
+#projects .nav-tabs > li > a {
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #1297a3;
+  font-weight: 500;
+}
+
+#projects .nav-tabs > li > a:hover, #projects .nav-tabs > li > a:focus {
+  background: none;
+}
+
+#projects .nav-tabs > li.active:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 24px 24px 24px;
+  border-color: transparent transparent #0095a7 transparent;
+  content: '';
+  position: absolute;
+  bottom: -87px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#projects .nav-tabs > li.active > a, #projects .nav-tabs > li.active > a:hover, #projects .nav-tabs > li.active > a:focus {
+  background: none;
+  border: none;
+  color: #f95741;
+}
+
+#project-tabs {
+  color: #fff;
+}
+
+#project-tabs #tab-content {
+  margin: 0;
+}
+
+#project-tabs h2, #project-tabs h3 {
+  color: #fff;
+}
+
+#project-tabs h2 {
+  margin-top: 0;
+}
+
+#project-tabs h2:after {
+  height: 5px;
+  width: 105px;
+  content: '';
+  background-color: #026785;
+  border-radius: 50px;
+  display: block;
+  margin: 33px 0 0;
+}
+
+#project-tabs h2:before {
+  height: 5px;
+  width: 40px;
+  content: '';
+  background-color: #f9b021;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.project-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.project-content-block:nth-of-type(odd) img {
+  margin-right: 96px;
+}
+
+.project-content-block:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.project-content-block:nth-of-type(even) img {
+  margin-left: 96px;
+}
+
+.project-content {
+  -ms-flex-preferred-size: 550px;
+  flex-basis: 550px;
+}
+
+/* Tech Page Styles */
+#careers h2:after {
+  background-color: #1297a3;
+}
+
+#careers h2:before {
+  background-color: #87d4c4;
+}
+
+#openings h2:before {
+  display: none;
+}
+
+#openings h2:after {
+  background-color: #f95741;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*# sourceMappingURL=theme.css.map */

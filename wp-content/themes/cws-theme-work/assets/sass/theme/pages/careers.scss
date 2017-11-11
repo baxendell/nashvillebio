@@ -1,0 +1,28 @@
+/* Tech Page Styles */
+
+#careers {
+	h2 {
+		&:after {
+			background-color: $lt-blue;
+		}
+
+		&:before {
+			background-color: #87d4c4;
+		}
+	}
+}
+
+#openings {
+	h2 {
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			background-color: $red;
+			width: 80px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
