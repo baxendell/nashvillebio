@@ -7626,6 +7626,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-weight: 400;
 }
 
 .skiplink {
@@ -7675,6 +7676,14 @@ h3 {
   font-size: 24px;
   font-size: 2.4rem;
   line-height: 1.333;
+}
+
+h4 {
+  color: #91d6c8;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1.5;
 }
 
 a {
@@ -7804,6 +7813,14 @@ p {
 
 .page-template-expertise #main-header {
   background-image: url("../../images/banners/expertise-banner.jpg");
+}
+
+.page-template-careers #main-header {
+  background-image: url("../../images/banners/careers-banner.jpg");
+}
+
+.page-template-partnering #main-header {
+  background-image: url("../../images/banners/partnering-banner.jpg");
 }
 
 .site-logo {
@@ -8916,7 +8933,7 @@ p {
   background-repeat: no-repeat;
 }
 
-#biovu .left-pill, #offerings .left-pill, .left-pill #careers, #biovu .right-pill, #offerings .right-pill, .right-pill #careers {
+#biovu .left-pill, #offerings .left-pill, #careers .left-pill, #biovu .right-pill, #offerings .right-pill, #careers .right-pill {
   top: 347px;
 }
 
@@ -9118,234 +9135,6 @@ p {
   height: 100%;
 }
 
-/* Blog Page Styles */
-#blog {
-  position: relative;
-  z-index: 2;
-}
-
-@media screen and (min-width: 992px) {
-  #blog #sidebar {
-    margin-top: -45px;
-  }
-}
-
-.post-excerpt {
-  padding-bottom: 55px;
-  border-bottom: 1px solid #dadada;
-  margin-bottom: 47px;
-}
-
-.blog-post .title-right {
-  margin-bottom: 25px;
-}
-
-.blog-post .title-right h2 {
-  font-size: 25px;
-  font-size: 2.5rem;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-style: normal;
-}
-
-.blog-post .title-right h2 a {
-  color: #272d45;
-  text-transform: uppercase;
-}
-
-.blog-post .post-meta span {
-  font-size: 17px;
-  font-family: "proxima-nova", sans-serif;
-  color: #1e2a32;
-  font-weight: 400;
-}
-
-.blog-post .image-holder img {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .blog-post .image-holder img {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .blog-post .image-holder.pull-left {
-    float: none !important;
-    text-align: center;
-  }
-}
-
-.blog-post .post-wrap .blog-excerpt p,
-.blog-post .post-wrap .blog-content p {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-  color: #56544f;
-}
-
-.blog-excerpt p a {
-  display: none;
-}
-
-.blog-read-more-btn {
-  font-size: 17px;
-  font-size: 1.7rem;
-  width: 216px;
-  height: 50px;
-  line-height: 28px;
-}
-
-.featured-image {
-  margin-top: 10px;
-}
-
-.single-post .post-wrap, .single-qa_faqs .post-wrap {
-  padding-left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .single-post .post-wrap .blog-content .image-holder, .single-qa_faqs .post-wrap .blog-content .image-holder {
-    margin-right: 25px;
-  }
-}
-
-.single-post .post-wrap .blog-content a, .single-qa_faqs .post-wrap .blog-content a {
-  text-decoration: underline;
-}
-
-.single-post .post-wrap .blog-content .ssbp-list li a, .single-qa_faqs .post-wrap .blog-content .ssbp-list li a {
-  text-decoration: none !important;
-}
-
-.single-post .post-wrap .blog-content h2 a, .single-qa_faqs .post-wrap .blog-content h2 a {
-  font-family: "proxima-nova", serif;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-@media (min-width: 992px) {
-  .single-post #blog {
-    padding-bottom: 40px;
-  }
-}
-
-/* Pagination nav on home.php, single.php, archive.*, author.*, etc...--------- */
-.blog-navigation li a,
-.blog-navigation li a:hover,
-.blog-navigation li.active a,
-.blog-navigation li.disabled {
-  padding: 1px 7px 1px 7px;
-  margin-right: 2px;
-  font-weight: 400;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-#main .blog-navigation li a, #main
-.blog-navigation li a:hover, #main
-.blog-navigation li.active a, #main
-.blog-navigation li.disabled {
-  text-decoration: none !important;
-}
-
-.blog-navigation * {
-  font-size: 18px;
-  color: #012635;
-  font-weight: 400;
-}
-
-.blog-navigation span {
-  display: inline-block;
-}
-
-.blog-navigation span:last-child {
-  border-bottom: 1px solid #000;
-  line-height: 16px;
-}
-
-.blog-navigation ul {
-  margin-bottom: 46px;
-  display: inline-block;
-  padding-left: 20px;
-}
-
-.blog-navigation li {
-  display: inline;
-  color: #56544f;
-}
-
-.blog-navigation li::before {
-  content: '';
-}
-
-.blog-pagination {
-  margin-top: 35px;
-  text-align: right;
-}
-
-.blog-navigation a span {
-  color: #08204a;
-  vertical-align: 9%;
-}
-
-.blog-navigation a span:hover {
-  color: red;
-}
-
-.blog-navigation li a:hover,
-.blog-navigation li.active a {
-  border: 1px solid #dadada;
-}
-
-.blog-navigation li.page-li {
-  padding-right: 15px;
-  font-family: "proxima-nova", sans-serif !important;
-  font-size: 16px !important;
-  text-transform: uppercase;
-  color: #56544f !important;
-}
-
-.embed-callout {
-  font-size: 23px;
-  text-align: center;
-  color: #FFF;
-  margin-top: 10px;
-  font-family: "proxima-nova", serif;
-}
-
-.embed-share {
-  background: #006f53;
-  padding: 10px;
-  width: auto;
-  height: auto;
-  margin: 0 auto 65px;
-}
-
-#infographic {
-  height: 100px;
-}
-
-.embed-share textarea {
-  overflow: auto;
-  padding: 6px;
-  vertical-align: top;
-  width: 98% !important;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.ssbp-wrap {
-  margin-top: 60px;
-}
-
-.ssbp-wrap.ssbp--centred {
-  bottom: 0 !important;
-}
-
-/* Bio Page Styles */
 /* Contact Page Styles */
 /* Front Page Styles */
 section {
@@ -9774,12 +9563,21 @@ section {
 }
 
 /* Tech Page Styles */
+#careers {
+  color: #8a8a8a;
+}
+
 #careers h2:after {
   background-color: #1297a3;
 }
 
 #careers h2:before {
   background-color: #87d4c4;
+}
+
+#openings {
+  margin-top: 30px;
+  color: #8a8a8a;
 }
 
 #openings h2:before {
@@ -9791,6 +9589,143 @@ section {
   width: 80px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#openings .border-box {
+  text-align: left;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 56px;
+}
+
+#openings #accordion {
+  margin-bottom: 66px;
+}
+
+#accordion .panel {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 14px;
+}
+
+#accordion .panel-heading {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#accordion .panel-title > a {
+  display: block;
+  font-size: 18px;
+  padding: 20px 54px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE5SURBVGhD7ZQ9bsJAEEYdCqQUFJRQIiW5CEdAouMcFNyDnCAFUnKelGk4ABeweWZnCoSJcPBu1uh70sj2/nwzT0gUQgghhBBCiC6oquqpLMsX6tmW+gcSQ2pHVYj8UK+21R9qCQb/qiUcvve9kmHmCwmnNzLM2vRLHOz1RPYyzNgk8U1NqXdbOsF3njLMdk1iYvv1v1feMsz0q4TDcr4yzHKThMN2fjLM0ErC4Vg+MvT+k4TD8Wsyb3YkPvS8S8Lh2v/J0KsTCYfr6WXo0amEQ0w6GbKjSDjExZchM6qEQ2w8GbKSSDjEdy9DxoCAzxAX4DuahEObRhkeMzvSDi4vQkwghYRDuyaZD9tuB3fnISKthEPbMxnet7bVHi4vqQ05Y1tKCn1rmRXPNc+RLQshhBBCCCEegaI4ApPheyeauKCNAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: right 44px center;
+  background-color: #1297a3;
+  border: 2px solid #1297a3;
+  border-radius: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#accordion .panel-title > a.collapsed {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVGhD7dExbsIwFMZxd2Rk6BYhwIZcoQOqHTp16gmYELfgFizco+qNysTI0iUvmPQ9FYmoIkCcWPp+kgf7SY7/igIAAAAAgBN6SXqUGc3bVtDMPNPreMLb+gqbDnOn9+RMkTuzKZR64lEwPuDdv+FweoNfSz6uh6xe8AXlyq3ehowpI6z++fu++eJRPcVs0PcXfbcRcxHhDJHTHzyuj95GU3/hLmRMZYTVKx7fLmRMYxEiREzjEaLJmGARoomY4BHikTGtRYhHxLQeIe6J6UyEuCWmcxGCsjS9NqazEeKamM5HiP9iookQlTFOf0YVIapioosQ1X8msghxHhNthCBrErKTNWXjOR8BAAAAAAD8UuoIV7fUf2CfWW8AAAAASUVORK5CYII=");
+  background-color: #fff;
+  border-color: #f7f7f7;
+  color: #f95741;
+}
+
+#accordion .panel-title > a:hover, #accordion .panel-title > a:focus {
+  text-decoration: none;
+}
+
+#accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  padding: 20px 54px;
+}
+
+/* Tech Page Styles */
+#careers {
+  color: #8a8a8a;
+}
+
+#careers h2:after {
+  background-color: #1297a3;
+}
+
+#careers h2:before {
+  background-color: #87d4c4;
+}
+
+#openings {
+  margin-top: 30px;
+  color: #8a8a8a;
+}
+
+#openings h2:before {
+  display: none;
+}
+
+#openings h2:after {
+  background-color: #f95741;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#openings .border-box {
+  text-align: left;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 56px;
+}
+
+#openings #accordion {
+  margin-bottom: 66px;
+}
+
+#accordion .panel {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 14px;
+}
+
+#accordion .panel-heading {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#accordion .panel-title > a {
+  display: block;
+  font-size: 18px;
+  padding: 20px 54px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE5SURBVGhD7ZQ9bsJAEEYdCqQUFJRQIiW5CEdAouMcFNyDnCAFUnKelGk4ABeweWZnCoSJcPBu1uh70sj2/nwzT0gUQgghhBBCiC6oquqpLMsX6tmW+gcSQ2pHVYj8UK+21R9qCQb/qiUcvve9kmHmCwmnNzLM2vRLHOz1RPYyzNgk8U1NqXdbOsF3njLMdk1iYvv1v1feMsz0q4TDcr4yzHKThMN2fjLM0ErC4Vg+MvT+k4TD8Wsyb3YkPvS8S8Lh2v/J0KsTCYfr6WXo0amEQ0w6GbKjSDjExZchM6qEQ2w8GbKSSDjEdy9DxoCAzxAX4DuahEObRhkeMzvSDi4vQkwghYRDuyaZD9tuB3fnISKthEPbMxnet7bVHi4vqQ05Y1tKCn1rmRXPNc+RLQshhBBCCCEegaI4ApPheyeauKCNAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: right 44px center;
+  background-color: #1297a3;
+  border: 2px solid #1297a3;
+  border-radius: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#accordion .panel-title > a.collapsed {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVGhD7dExbsIwFMZxd2Rk6BYhwIZcoQOqHTp16gmYELfgFizco+qNysTI0iUvmPQ9FYmoIkCcWPp+kgf7SY7/igIAAAAAgBN6SXqUGc3bVtDMPNPreMLb+gqbDnOn9+RMkTuzKZR64lEwPuDdv+FweoNfSz6uh6xe8AXlyq3ehowpI6z++fu++eJRPcVs0PcXfbcRcxHhDJHTHzyuj95GU3/hLmRMZYTVKx7fLmRMYxEiREzjEaLJmGARoomY4BHikTGtRYhHxLQeIe6J6UyEuCWmcxGCsjS9NqazEeKamM5HiP9iookQlTFOf0YVIapioosQ1X8msghxHhNthCBrErKTNWXjOR8BAAAAAAD8UuoIV7fUf2CfWW8AAAAASUVORK5CYII=");
+  background-color: #fff;
+  border-color: #f7f7f7;
+  color: #f95741;
+}
+
+#accordion .panel-title > a:hover, #accordion .panel-title > a:focus {
+  text-decoration: none;
+}
+
+#accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  padding: 20px 54px;
 }
 
 /*# sourceMappingURL=theme.css.map */

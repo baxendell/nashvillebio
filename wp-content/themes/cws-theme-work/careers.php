@@ -62,7 +62,7 @@ get_header() ?>
 
 				    <div class="panel-heading" role="tab" id="heading-<?php echo $i; ?>">
 				      <h3 class="panel-title">
-				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#career-<?php echo $i; ?>" aria-expanded="true" aria-controls="career-<?php echo $i; ?>">
+				        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#career-<?php echo $i; ?>" aria-expanded="true" aria-controls="career-<?php echo $i; ?>">
 				          <?php the_title() ?>
 				        </a>
 				      </h3>
@@ -83,7 +83,7 @@ get_header() ?>
 					<p>Nashville Biosciences is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by applicable law. Nashville Biosciences will only accept job applications from candidates who are properly documented with authorization to work in the United States.</p>
 
 					<p><strong>Notice to Recruiter/Staffing Agencies:</strong><br/>
-					Recruiters and staffing agencies should not contact Nashville Biosciences through this page. We require that all recruiters and staffing agencies have a signed contract on file. Any resumes submitted through the web site or directly by recruiters or staffing agencies will be considered unsolicited and the company will not be responsible for any related fees.</p>
+					<em>Recruiters and staffing agencies should not contact Nashville Biosciences through this page. We require that all recruiters and staffing agencies have a signed contract on file. Any resumes submitted through the web site or directly by recruiters or staffing agencies will be considered unsolicited and the company will not be responsible for any related fees.</em></p>
 
 				</div>
 
