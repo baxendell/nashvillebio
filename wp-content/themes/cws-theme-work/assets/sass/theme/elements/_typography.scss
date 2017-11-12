@@ -67,7 +67,26 @@ a {
 	
 	&:hover, &:focus {
 		color: $dk-blue-lt;
-	}	
+	}
+
+	.lt-blue-bg & {
+		color: #87d4c4;
+
+		&[href^="mailto"] {
+			color: #87d4c4;
+
+			&:hover, &:focus {
+				color: $dk-blue-lt;
+			}
+		}
+		&:hover, &:focus {
+			color: $dk-blue-lt;
+		}
+
+		&.btn {
+			color: $white;
+		}
+	}
 }
 
 p {

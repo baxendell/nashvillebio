@@ -14,9 +14,13 @@ get_header() ?>
 
 		<div class="row">
 
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-offset-1 col-md-11">
 
 				<h2>Partnering With Us</h2>
+
+			</div>
+
+			<div class="col-md-5 col-md-offset-1">
 
 				<?php if ( have_posts() ) : ?> 
 
@@ -30,7 +34,7 @@ get_header() ?>
 
 			<div class="col-md-5 text-center">
 
-				<h3>The Right Indication.<br/><span class="line-2">The Right Patient Population.</span><br/><span class="line-3">The Right Trial Endpoints.</span></h3>
+				<h4>The Right Indication.<br/><span class="line-2">The Right Patient Population.</span><br/><span class="line-3">The Right Trial Endpoints.</span></h4>
 
 			</div>
 
@@ -41,9 +45,9 @@ get_header() ?>
 
 			<h2 class="text-center">Our Offerings</h2>
 
-			<div class="col-md-offset-1 col-md-10">
+			<div class="col-md-offset-1 col-md-10 clearfix">
 
-				<div class="border-box">
+				<div class="border-box sameHeight">
 
 					<i class="compass-icon"></i>
 
@@ -51,7 +55,7 @@ get_header() ?>
 
 				</div>
 
-				<div class="border-box">
+				<div class="border-box sameHeight">
 
 					<i class="pill-icon"></i>
 
@@ -59,7 +63,7 @@ get_header() ?>
 
 				</div>
 
-				<div class="border-box">
+				<div class="border-box sameHeight">
 
 					<i class="pill-icon"></i>
 

@@ -1979,6 +1979,9 @@ jQuery(document).ready(function($) {
 	      }
 	    }
 	  });
+
+	//Matchheight
+	$('.sameHeight').matchHeight();
 	  
 	//Skip Link
 	var skipLink = function () {
@@ -1996,8 +1999,6 @@ jQuery(document).ready(function($) {
 		$('#m-toggle').toggleClass('.nav-active menu');
 	});
 
-	//No comments
-	$("#commentform").addClass("noauto");
 
 	//Navigation
 	$(".nav-opener").on("click",function() {
