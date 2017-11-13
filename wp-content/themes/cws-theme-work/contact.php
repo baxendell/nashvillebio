@@ -7,37 +7,68 @@
 get_header();
  ?>
 
-<div class='contact-location-content'>
-	<section class="cl-top-content" class="no-top-block">
-		
-		<div class="container">
-		
-			<div class="row">
-					    	
-		    	<article class="col-md-12 no-pad-right">
-								
-					<?php if ( have_posts() ) : ?> 
+<section id="contact">
 
-						<?php while ( have_posts() ) : the_post() ?>
+	<div class="left-pill"></div>
 
-							<?php the_content() ?>
+	<div class="right-pill"></div>
 
-						<?php endwhile ?>
+	<div class="container">
 
-					<?php endif ?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post() ?>
 
-				</article>	
+		<div class="row">
 
-				<?php get_template_part('partials/yoast-location'); ?>	
+			<div class="col-md-5 center-col text-center">
 
-				<?php get_template_part('partials/contact-form') ?>
+				<h2>Get in Touch</h2>
+
+				<?php the_content() ?>
+
+				<p class="address">Nashville Biosciences</p>
+
+				<p>2525 West End Ave, Suite 930<br/>Nashville, TN 37203<br/>(615) 343-0212</p>
 
 			</div>
 
 		</div>
 
-	</section>
+		<div id="map-area" class="row">
 
-</div>
+			<div class="col-md-offset-1 col-md-5 no-pad-right">
+
+				<?php the_post_thumbnail('full', array('class'=>'img-responsive')) ?>
+
+				<div class="bottom-contact">
+
+					<p>Partnership Opportunities<br/><a href="mailto:customers@nashvillebiosciences.com">customers@nashvillebiosciences.com</a></p>
+
+					<p>General Inquiries<br/><a href="mailto:info@nashvillebiosciences.com">info@nashvillebiosciences.com</a></p>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-5 no-pad-left">
+
+				<?php the_field('map') ?>
+
+				<div class="bottom-contact">
+
+					<p>Careers Inquiries<br/><a href="mailto:careers@nashvillebiosciences.com">careers@nashvillebiosciences.com</a></p>
+
+					<p>Media Inquiries<br/><a href="mailto:media@nashvillebiosciences.com">media@nashvillebiosciences.com</a></p>
+
+				</div>				
+
+			</div>
+
+		</div>
+
+		<?php endwhile; endif; ?>
+
+	</div>
+
+</section>
 
 <?php get_footer() ?>

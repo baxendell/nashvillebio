@@ -7843,6 +7843,10 @@ p {
   background-image: url("../../images/banners/partnering-banner.jpg");
 }
 
+.page-template-contact #main-header {
+  background-image: url("../../images/banners/contact-banner.jpg");
+}
+
 .site-logo {
   width: 203px;
   height: 98px;
@@ -8906,11 +8910,11 @@ p {
 }
 
 /**About Page**/
-#history, #publications, #offerings, #careers, #partnering, #efforts {
+#history, #publications, #offerings, #careers, #partnering, #efforts, #contact {
   position: relative;
 }
 
-#history h2:after, #publications h2:after, #offerings h2:after, #careers h2:after, #partnering h2:after, #efforts h2:after {
+#history h2:after, #publications h2:after, #offerings h2:after, #careers h2:after, #partnering h2:after, #efforts h2:after, #contact h2:after {
   height: 5px;
   width: 105px;
   content: '';
@@ -8920,7 +8924,7 @@ p {
   margin: 33px 0 54px;
 }
 
-#history h2:before, #publications h2:before, #offerings h2:before, #careers h2:before, #partnering h2:before, #efforts h2:before {
+#history h2:before, #publications h2:before, #offerings h2:before, #careers h2:before, #partnering h2:before, #efforts h2:before, #contact h2:before {
   height: 5px;
   width: 40px;
   content: '';
@@ -8953,7 +8957,7 @@ p {
   background-repeat: no-repeat;
 }
 
-#biovu .left-pill, #offerings .left-pill, #careers .left-pill, #partnering .left-pill, #biovu .right-pill, #offerings .right-pill, #careers .right-pill, #partnering .right-pill {
+#biovu .left-pill, #offerings .left-pill, #careers .left-pill, #partnering .left-pill, #contact .left-pill, #biovu .right-pill, #offerings .right-pill, #careers .right-pill, #partnering .right-pill, #contact .right-pill {
   top: 347px;
 }
 
@@ -9156,6 +9160,40 @@ p {
 }
 
 /* Contact Page Styles */
+#contact {
+  color: #8a8a8a;
+}
+
+#contact h2:after {
+  background-color: #008599;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact h2:before {
+  background-color: #f95741;
+  left: 41%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#contact .address {
+  color: #034e63;
+}
+
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important;
+}
+
 /* Front Page Styles */
 section {
   padding: 88px 0;

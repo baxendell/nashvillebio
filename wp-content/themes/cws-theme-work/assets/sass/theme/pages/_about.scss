@@ -1,7 +1,7 @@
 /**About Page**/
 
 
-#history, #publications, #offerings, #careers, #partnering, #efforts {
+#history, #publications, #offerings, #careers, #partnering, #efforts, #contact {
 	position: relative;
 	h2 {
 		&:after {
@@ -46,7 +46,7 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 
-	#biovu &, #offerings &, #careers &, #partnering & {
+	#biovu &, #offerings &, #careers &, #partnering &, #contact & {
 		top: 347px;
 	}
 }
