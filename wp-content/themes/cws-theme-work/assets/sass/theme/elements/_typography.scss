@@ -99,6 +99,11 @@ a {
 
 p {
 	line-height: 1.5;
+	color: #8a8a8a;
+
+	.lt-blue-bg &, #site-footer & {
+		color: $white;
+	}
 }
 
 ul {
@@ -106,33 +111,6 @@ ul {
 }
 
 ol {
-	.entry-content & {
-		list-style: none;
-		padding-left: 35px;
-		margin-bottom: 34px;
-
-		li {
-			counter-increment: li;
-			margin-bottom: 24px;
-			&:before {
-				content: counter(li);
-				color: $white;
-				display: inline-block;
-				width: 1em;
-				margin-left: -1.5em;
-				margin-right: 0.7em;
-				text-align: center;
-				background-color: $dk-blue;
-				border-radius: 50%;
-				height: 24px;
-				width: 24px;
-				font-family: $font-family-heading;
-				font-style: italic;
-				line-height: 20px;
-				border: 2px solid #d9dee7;
-			}
-		}
-	}
 }
 
 

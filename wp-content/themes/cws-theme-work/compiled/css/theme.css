@@ -7739,35 +7739,11 @@ a:hover, a:focus {
 
 p {
   line-height: 1.5;
+  color: #8a8a8a;
 }
 
-.entry-content ol {
-  list-style: none;
-  padding-left: 35px;
-  margin-bottom: 34px;
-}
-
-.entry-content ol li {
-  counter-increment: li;
-  margin-bottom: 24px;
-}
-
-.entry-content ol li:before {
-  content: counter(li);
+.lt-blue-bg p, #site-footer p {
   color: #fff;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.5em;
-  margin-right: 0.7em;
-  text-align: center;
-  background-color: #012635;
-  border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  font-family: "proxima-nova", serif;
-  font-style: italic;
-  line-height: 20px;
-  border: 2px solid #d9dee7;
 }
 
 /**Icons**/
@@ -8997,93 +8973,80 @@ p {
   font-weight: 400;
 }
 
-.left-pill, .right-pill {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 350px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#biovu .left-pill, #offerings .left-pill, #careers .left-pill, #partnering .left-pill, #contact .left-pill, #biovu .right-pill, #offerings .right-pill, #careers .right-pill, #partnering .right-pill, #contact .right-pill {
-  top: 347px;
-}
-
-.left-pill {
-  left: 0;
-  width: 215px;
-  background-color: #87d4c4;
-  border-radius: 0 172px 172px 0;
-}
-
-#biovu .left-pill {
-  background-color: #f9b021;
-}
-
-#offerings .left-pill {
-  background-color: #008295;
-}
-
-#careers .left-pill, #contact .left-pill {
-  background-color: #f95741;
-}
-
-.right-pill {
-  right: 0;
-  width: 289px;
-  border-radius: 180px 0 0 180px;
-  background-color: #009eb9;
-  overflow: hidden;
-}
-
-.right-pill:before {
-  position: absolute;
-  width: 256px;
-  height: 256px;
-  border-radius: 100%;
-  content: '';
-  right: -200px;
-  background-color: #f9b021;
-  display: block;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#biovu .right-pill, #contact .right-pill {
-  background-color: #87d4c4;
-}
-
-#biovu .right-pill:before, #contact .right-pill:before {
-  background-color: #008295;
-}
-
-#expertise .right-pill {
-  background-color: #f9b021;
-}
-
-#expertise .right-pill:before {
-  background-color: #f95741;
-}
-
-#careers .right-pill {
-  background-color: #008599;
-}
-
-#careers .right-pill:before {
-  background-color: #87d4c4;
-}
-
-#partnering .right-pill {
-  background-color: #008599;
-}
-
-#partnering .right-pill:before {
-  background-color: #f95741;
+@media screen and (min-width: 1300px) {
+  .left-pill, .right-pill {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 350px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #biovu .left-pill, #offerings .left-pill, #careers .left-pill, #partnering .left-pill, #contact .left-pill, #biovu .right-pill, #offerings .right-pill, #careers .right-pill, #partnering .right-pill, #contact .right-pill {
+    top: 347px;
+  }
+  .left-pill {
+    left: 0;
+    width: 215px;
+    background-color: #87d4c4;
+    border-radius: 0 172px 172px 0;
+  }
+  #biovu .left-pill {
+    background-color: #f9b021;
+  }
+  #offerings .left-pill {
+    background-color: #008295;
+  }
+  #careers .left-pill, #contact .left-pill {
+    background-color: #f95741;
+  }
+  .right-pill {
+    right: 0;
+    width: 289px;
+    border-radius: 180px 0 0 180px;
+    background-color: #009eb9;
+    overflow: hidden;
+  }
+  .right-pill:before {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    border-radius: 100%;
+    content: '';
+    right: -200px;
+    background-color: #f9b021;
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  #biovu .right-pill, #contact .right-pill {
+    background-color: #87d4c4;
+  }
+  #biovu .right-pill:before, #contact .right-pill:before {
+    background-color: #008295;
+  }
+  #expertise .right-pill {
+    background-color: #f9b021;
+  }
+  #expertise .right-pill:before {
+    background-color: #f95741;
+  }
+  #careers .right-pill {
+    background-color: #008599;
+  }
+  #careers .right-pill:before {
+    background-color: #87d4c4;
+  }
+  #partnering .right-pill {
+    background-color: #008599;
+  }
+  #partnering .right-pill:before {
+    background-color: #f95741;
+  }
 }
 
 #team {
@@ -9155,15 +9118,22 @@ p {
 @media screen and (min-width: 768px) {
   .team-member {
     float: left;
+    margin-right: 42px;
+  }
+  .team-member:nth-of-type(3n-0) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .team-member {
+    margin-right: 110px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-member {
     margin-right: 180px;
-  }
-  .team-member:nth-of-type(3n-0) {
-    margin-right: 0;
   }
 }
 

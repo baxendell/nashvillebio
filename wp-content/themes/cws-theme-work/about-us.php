@@ -40,7 +40,7 @@ get_header() ?>
 
 		<div class="row">
 
-			<div class="col-md-offset-1 col-md-6">
+			<div class="col-md-offset-1 col-md-7 col-lg-offset-1 col-lg-6">
 
 				<header>
 
