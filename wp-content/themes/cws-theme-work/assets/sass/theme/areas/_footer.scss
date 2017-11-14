@@ -11,6 +11,10 @@
 		&:hover, &:focus {
 			color: $yellow;
 		}
+
+		@media screen and (max-width: 767px) {
+			margin: 0 auto;
+		}
 	}
 
 	.col-md-3 {
@@ -19,6 +23,10 @@
 
 			@media screen and (min-width: 992px) and (max-width: 1199px) {
 				@include rem-font-size(15px);
+			}
+
+			@media screen and (max-width: 767px) {
+				text-align: center;
 			}
 		}
 	}

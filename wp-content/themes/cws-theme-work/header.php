@@ -45,33 +45,24 @@
 
 			<?php if(wp_is_mobile()): ?>
 
-			<div id="m-toggle" class="header-top-wrap visible-xs affix">
+			<nav id="mobile-nav" class="mobile-nav-links-container visible-xs">
 
-				<a class="visible-xs" href="/">
-					<img class="visible-xs" src="<?php bloginfo('template_url');?>/images/company-name-logo-sm.png" alt="Client Name HEre">
-				</a>
+				<button class="nav-opener" data-toggle="collapse" data-target=".navbar-collapse">                  
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	            </button>	
 
-				<nav id="mobile-nav" class="mobile-nav-links-container">
+				<?php wp_nav_menu( array( 
+					'container'         => 'div',
+					'container_class'   => 'collapse navbar-collapse',
+					'theme_location'  => 'mobile-menu',
+					'menu_class' 		=> 'nav navbar-nav',
+					'walker'          => new Walker_Nav_Primary()
 
-					<button class="nav-opener" data-toggle="collapse" data-target=".navbar-collapse">        MENU                  
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            
-                    </button>	
+				) ) ?>
 
-					<?php wp_nav_menu( array( 
-						'container'         => 'div',
-						'container_class'   => 'collapse navbar-collapse',
-						'theme_location'  => 'mobile-menu',
-						'menu_class' 		=> 'nav navbar-nav',
-						'walker'          => new Walker_Nav_Primary()
-
-					) ) ?>
-
-				</nav>
-
-			</div>
+			</nav>
 
 			<?php endif ?>
 
@@ -89,7 +80,7 @@
 
 					</div>
 
-					<div class="col-sm-8 col-md-8 col-md-offset-1">
+					<div class="col-sm-8 col-md-8 col-md-offset-1 hidden-xs">
 
 						<div class="pl-65">
 
