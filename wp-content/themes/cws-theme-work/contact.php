@@ -51,7 +51,7 @@ get_header();
 
 			<div class="col-md-5 no-pad-left">
 
-				<?php the_field('map') ?>
+				<div id="contact-map"></div>
 
 				<div class="bottom-contact">
 
