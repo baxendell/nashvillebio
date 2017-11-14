@@ -29,9 +29,9 @@ section {
 	line-height: 1.5;
 
 	@media screen and (min-width: 768px) {
-		display: inline-block;
+		float: left;
 		padding: 0 25px;
-		width: 19%;
+		width: 20%;
 	}
 
 	h3 {

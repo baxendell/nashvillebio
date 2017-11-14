@@ -6,7 +6,7 @@
 
         <div class="row">
 
-          <div class="col-md-offset-1 col-md-3">
+          <div class="col-sm-4 col-md-offset-1 col-md-3">
 
             <a class="site-logo" href="/">
 
@@ -16,19 +16,19 @@
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-4 col-md-3">
 
             <p>2525 West End Ave, Suite 930<br/>Nashville, TN 37203</p>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-4 col-md-3">
 
             <p>(615) 343-0212<br/><a href="mailto:info@nashville.bio">info@nashville.bio</a></p>
 
           </div>
 
-          <div class="col-md-2">
+          <div class="col-xs-12 col-md-2">
 
             <a href="#" target="_blank" class="linked-in-icon">
 

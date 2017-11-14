@@ -79,7 +79,7 @@
 
 				<div class="row">
 
-					<div class="col-md-3">
+					<div class="col-sm-4 col-md-3">
 
 						<a class="site-logo" href="/">
 
@@ -89,7 +89,7 @@
 
 					</div>
 
-					<div class="col-md-8 col-md-offset-1">
+					<div class="col-sm-8 col-md-8 col-md-offset-1">
 
 						<div class="pl-65">
 

@@ -16,12 +16,20 @@
 	.col-md-3 {
 		p {
 			margin-top: 20px;
+
+			@media screen and (min-width: 992px) and (max-width: 1199px) {
+				@include rem-font-size(15px);
+			}
 		}
 	}
 
 	.linked-in-icon {
 		margin-top: 28px;
 		display: block;
+
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
 	}
 }
 

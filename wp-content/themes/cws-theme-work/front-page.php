@@ -105,7 +105,7 @@ get_header();
 
 		<div class="row">
 
-			<div class="col-md-offset-1 col-md-6">
+			<div class="col-sm-6 col-md-offset-1 col-md-6">
 
 				<?php the_field('section_2_content') ?>
 
@@ -113,7 +113,7 @@ get_header();
 
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-sm-6 col-md-4">
 
 				<div class="text-center">
 

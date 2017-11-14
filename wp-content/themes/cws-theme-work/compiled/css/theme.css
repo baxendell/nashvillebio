@@ -8760,9 +8760,22 @@ p {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #site-footer .col-md-3 p {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+
 #site-footer .linked-in-icon {
   margin-top: 28px;
   display: block;
+}
+
+@media screen and (max-width: 991px) {
+  #site-footer .linked-in-icon {
+    text-align: center;
+  }
 }
 
 .copyright {
@@ -9231,9 +9244,9 @@ section {
 
 @media screen and (min-width: 768px) {
   .technology-item {
-    display: inline-block;
+    float: left;
     padding: 0 25px;
-    width: 19%;
+    width: 20%;
   }
 }
 
