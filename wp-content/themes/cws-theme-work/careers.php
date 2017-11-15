@@ -26,7 +26,7 @@ get_header() ?>
 
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-md-5 hidden-xs hidden-sm">
 
 				<?php the_post_thumbnail('full', array('class'=>'img-responsive')) ?>
 

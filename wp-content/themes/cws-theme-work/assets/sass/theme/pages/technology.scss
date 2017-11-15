@@ -43,7 +43,6 @@
 
 .in-depth-item {
 	background-color: $dk-blue-lt;
-	color: #009eb9;
 	@include rem-font-size(12px);
 	border-radius: 10px;
 	padding: 52px 20px;
@@ -72,6 +71,7 @@
 
 	p {
 		line-height: normal;
+		color: #009eb9;
 	}
 }
 

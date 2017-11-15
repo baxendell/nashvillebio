@@ -42,7 +42,7 @@ get_header() ?>
 
 				<h2 class="text-center">An In-depth look at BioVU</h2>
 
-				<div class="in-depth-grid clearfix">
+				<div class="in-depth-grid clearfix hidden-xs hidden-sm">
 
 					<div class="in-depth-item">
 

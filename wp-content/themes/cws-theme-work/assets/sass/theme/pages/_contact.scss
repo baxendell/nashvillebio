@@ -24,18 +24,37 @@
 
 #contact-map {
 	height: 389px;
-	border-radius: 0 10px 10px 10px;
+
+	@media screen and (max-width: 991px) {
+		margin-top: 30px;
+	}
+
+	@media screen and (min-width: 992px) {
+		height: 387px;
+		border-radius: 0 10px 10px 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		height: 389px;
+	}
 }
 
 
 #map-area {
 	margin-top: 48px;
 	img {
-		border-radius: 10px 0 0 10px;
+
+		@media screen and (min-width: 992px) {
+			border-radius: 10px 0 0 10px;
+		}
 	}
 }
 
 .bottom-contact {
 	text-align: center;
-	margin-top: 68px;
+	margin-top: 25px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 68px
+	}
 }

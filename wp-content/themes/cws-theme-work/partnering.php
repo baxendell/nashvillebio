@@ -45,7 +45,7 @@ get_header() ?>
 
 			<h2 class="text-center">Our Offerings</h2>
 
-			<div class="col-md-offset-1 col-md-10 clearfix">
+			<div class="col-lg-offset-1 col-lg-10 clearfix">
 
 				<div class="border-box sameHeight">
 

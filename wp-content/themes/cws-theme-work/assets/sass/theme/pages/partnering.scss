@@ -37,10 +37,18 @@
 	}
 
 	.border-box {
-		width: percentage(308/967);
-		float: left;
-		margin-right: 20px;
-		margin-top: 58px;
+		margin-top: 86px;
+
+		@media screen and (min-width: 768px) {
+			margin-right: 15px;
+			margin-top: 58px;
+			width: percentage(308/967);
+			float: left;			
+		}
+
+		@media screen and (min-width: 992px) {
+			margin-right: 20px;
+		}
 
 		&:last-of-type {
 			margin-right: 0;

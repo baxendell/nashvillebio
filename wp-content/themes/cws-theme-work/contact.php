@@ -35,7 +35,7 @@ get_header();
 
 		<div id="map-area" class="row">
 
-			<div class="col-md-offset-1 col-md-5 no-pad-right">
+			<div class="col-md-6 col-lg-offset-1 col-lg-5 no-pad-right">
 
 				<?php the_post_thumbnail('full', array('class'=>'img-responsive')) ?>
 
@@ -49,7 +49,7 @@ get_header();
 
 			</div>
 
-			<div class="col-md-5 no-pad-left">
+			<div class="col-md-6 col-lg-5 no-pad-left">
 
 				<div id="contact-map"></div>
 

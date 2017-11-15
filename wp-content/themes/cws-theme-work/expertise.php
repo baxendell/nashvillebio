@@ -38,7 +38,7 @@ get_header() ?>
 
 			<div class="col-md-offset-1 col-md-5">
 
-				<div class="border-box">
+				<div class="border-box sameHeight">
 
 					<i class="compass-icon"></i>
 
@@ -50,7 +50,7 @@ get_header() ?>
 
 			<div class="col-md-offset-1 col-md-5">
 
-				<div class="border-box">
+				<div class="border-box sameHeight">
 
 					<i class="pill-icon"></i>
 
@@ -62,7 +62,7 @@ get_header() ?>
 
 		</div>
 
-		<div id="projects" class="row">
+		<div id="projects" class="row hidden-xs">
 
 			<header class="col-md-6 center-col text-center no-pad">
 
@@ -74,7 +74,7 @@ get_header() ?>
 
 			<div class="clear"></div>
 
-			<div class="col-md-10 center-col">
+			<div class="col-lg-10 center-col">
 
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
@@ -118,13 +118,13 @@ get_header() ?>
 
 </section>
 
-<section id="project-tabs" class="lt-blue-bg">
+<section id="project-tabs" class="lt-blue-bg hidden-xs">
 
 	<div class="container">
 
 		<div class="row">
 
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-lg-10 col-lg-offset-1">
 
 				<div class="tab-content">
 

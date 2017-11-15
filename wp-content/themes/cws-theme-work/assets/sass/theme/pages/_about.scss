@@ -29,9 +29,11 @@
 }
 
 #publications {
-	background-image: url('../../images/about/publications-bg.jpg');
-	background-repeat: no-repeat;
-	background-position: right top;
+	@media screen and (min-width: 768px) {
+		background-image: url('../../images/about/publications-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
 
 	h3 {
 		font-weight: 400;
@@ -125,6 +127,27 @@
 	}
 }
 
+.nav-tabs {
+	border: none;
+}
+
+.nav-tabs > li > a {
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	color: $ocean-blue;
+	border: 1px solid $ocean-blue;
+	border-radius: 50px;
+	padding: 0 22px;
+	margin-right: 10px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: $red;
+	border-color: $red;
+	color: $white;
+}
+
 #team {
 	color: $white;
 	padding-bottom: 12px;	
@@ -158,28 +181,21 @@
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		.nav-tabs {
+			>li {
+				float: none;
+				margin-bottom: 25px;
+
+				>a {
+					padding: 8px 22px;
+				}
+			}
+		}
+	}
+
 }
 
-.nav-tabs {
-	border: none;
-}
-
-.nav-tabs > li > a {
-	font-weight: 700;
-	font-size: 14px;
-	text-align: center;
-	color: $ocean-blue;
-	border: 1px solid $ocean-blue;
-	border-radius: 50px;
-	padding: 0 22px;
-	margin-right: 10px;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-	background-color: $red;
-	border-color: $red;
-	color: $white;
-}
 
 .tab-content {
 	margin-top: 52px;
@@ -196,6 +212,10 @@
 		&:nth-of-type(3n-0) {
 			margin-right: 0;
 		}		
+	}
+
+	@media screen and (max-width: 767px) {
+		margin: 0 auto 34px;
 	}
 
 	@media screen and (min-width: 992px) {
