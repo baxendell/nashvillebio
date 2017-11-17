@@ -7747,20 +7747,6 @@ p {
 }
 
 /**Icons**/
-.icon {
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-.icon-cw {
-  background-image: url("../images/icons/cw.png");
-  height: 14px;
-  width: 14px;
-  margin-right: 10px;
-  position: relative;
-  top: 2px;
-}
-
 /* Background Styles */
 /* Button Styles */
 .btn {
@@ -7835,6 +7821,30 @@ p {
 
 .page-template-contact #main-header {
   background-image: url("../../images/banners/contact-banner.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .home #main-header {
+    background-image: url("../../images/banners/home-banner@2x.jpg");
+  }
+  .page-template-about-us #main-header {
+    background-image: url("../../images/banners/about-banner@2x.jpg");
+  }
+  .page-template-technology #main-header {
+    background-image: url("../../images/banners/technology-bg@2x.jpg");
+  }
+  .page-template-expertise #main-header {
+    background-image: url("../../images/banners/expertise-banner@2x.jpg");
+  }
+  .page-template-careers #main-header {
+    background-image: url("../../images/banners/careers-banner@2x.jpg");
+  }
+  .page-template-partnering #main-header {
+    background-image: url("../../images/banners/partnering-banner@2x.jpg");
+  }
+  .page-template-contact #main-header {
+    background-image: url("../../images/banners/contact-banner@2x.jpg");
+  }
 }
 
 .site-logo {
@@ -8963,7 +8973,7 @@ p {
   bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #publications {
     background-image: url("../../images/about/publications-bg.jpg");
     background-repeat: no-repeat;
@@ -8973,6 +8983,12 @@ p {
 
 #publications h3 {
   font-weight: 400;
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  #publications {
+    background-image: url("../../images/about/publications-bg@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -9183,6 +9199,12 @@ p {
   display: block;
   width: 24px;
   height: 23px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .fa-linkedin {
+    background-image: url("../../images/linkedin-logo@2s.png");
+  }
 }
 
 .team-image {
@@ -9536,8 +9558,20 @@ section {
   background-image: url("../../images/icons/compass-icon.png");
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .compass-icon {
+    background-image: url("../../images/icons/compass-icon@2x.png");
+  }
+}
+
 .pill-icon {
   background-image: url("../../images/icons/pill-icon.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .pill-icon {
+    background-image: url("../../images/icons/pill-icon@2x.png");
+  }
 }
 
 .pill-icon, .compass-icon {

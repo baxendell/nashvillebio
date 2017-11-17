@@ -32,7 +32,7 @@
 
             <a href="#" target="_blank" class="linked-in-icon">
 
-              <img src="<?php bloginfo('template_url');?>/images/icons/linkdedin-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/linkdedin-icon@2x.png" />
+              <img src="<?php bloginfo('template_url') ?>/images/icons/linkdedin-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/linkdedin-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/linkdedin-icon@2x.png 2x" />
 
             </a>
 
@@ -48,7 +48,7 @@
 
             <a class="powered-by" href="#" target="_blank">
 
-              <img src="<?php bloginfo('template_url');?>/images/vanderbilt.png" data-at2x="<?php bloginfo('template_url');?>/images/vanderbilt@2x.png" />
+              <img src="<?php bloginfo('template_url') ?>/images/vanderbilt.png" srcset="<?php bloginfo('template_url') ?>/images/vanderbilt.png 1x, <?php bloginfo('template_url') ?>/images/vanderbilt@2x.png 2x" />
 
             </a>
 

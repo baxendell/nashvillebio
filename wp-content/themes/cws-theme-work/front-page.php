@@ -35,7 +35,8 @@ get_header();
 
 				<div class="technology-item">
 
-					<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/icons/advancing-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/icons/advancing-icon@2x.png" />
+					<img src="<?php bloginfo('template_url') ?>/images/icons/advancing-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/advancing-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/advancing-icon@2x.png 2x" />
+
 					<h3>Advancing</h3>
 					<p>Translational and Precision Medicine</p>
 
@@ -43,7 +44,8 @@ get_header();
 
 				<div class="technology-item">
 
-					<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/icons/solving-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/icons/solving-icon@2x.png" />
+					<img src="<?php bloginfo('template_url') ?>/images/icons/solving-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/solving-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/solving-icon@2x.png 2x" />
+
 					<h3>Solving</h3>
 					<p>Complex Genomic and Bioinformatics Problems </p>
 
@@ -51,7 +53,8 @@ get_header();
 
 				<div class="technology-item">
 
-					<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/icons/accelerate-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/icons/accelerate-icon@2x.png" />
+					<img src="<?php bloginfo('template_url') ?>/images/icons/accelerate-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/accelerate-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/accelerate-icon@2x.png 2x" />
+
 					<h3>Accelerating</h3>
 					<p>Rational Drug Development and Use</p>
 
@@ -59,7 +62,8 @@ get_header();
 
 				<div class="technology-item">
 
-					<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/icons/enable-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/icons/enable-icon@2x.png" />
+					<img src="<?php bloginfo('template_url') ?>/images/icons/enable-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/enable-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/enable-icon@2x.png 2x" />
+
 					<h3>Enabling</h3>
 					<p>Clinically Meaningful Discoveries </p>
 
@@ -67,7 +71,8 @@ get_header();
 
 				<div class="technology-item">
 
-					<img class="img-responsive"  src="<?php bloginfo('template_url');?>/images/icons/identify-icon.png" data-at2x="<?php bloginfo('template_url');?>/images/icons/identify-icon@2x.png" />
+					<img src="<?php bloginfo('template_url') ?>/images/icons/identify-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/identify-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/identify-icon@2x.png 2x" />
+
 					<h3>Identifying</h3>
 					<p>Patients Most Likely to Benefit from Treatment</p>
 
@@ -117,7 +122,7 @@ get_header();
 
 				<div class="text-center">
 
-					<img class="circle-target"  src="<?php bloginfo('template_url');?>/images/home/circle-thing.png" data-at2x="<?php bloginfo('template_url');?>/images/home/circle-thing@2x.png" />
+					<img src="<?php bloginfo('template_url') ?>/images/home/circle-thing.png" srcset="<?php bloginfo('template_url') ?>/images/home/circle-thing.png 1x, <?php bloginfo('template_url') ?>/images/home/circle-thing@2x.png 2x" />
 
 				</div>
 
@@ -143,7 +148,8 @@ get_header();
 
 			</header>
 
-			<img class="circles"  src="<?php bloginfo('template_url');?>/images/home/circles.png" data-at2x="<?php bloginfo('template_url');?>/images/home/circles@2x.png" />
+			<img src="<?php bloginfo('template_url') ?>/images/home/circles.png" srcset="<?php bloginfo('template_url') ?>/images/home/circles.png 1x, <?php bloginfo('template_url') ?>/images/home/circles@2x.png 2x" />
+
 
 		</div>
 

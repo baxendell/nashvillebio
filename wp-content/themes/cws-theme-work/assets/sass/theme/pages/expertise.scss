@@ -52,10 +52,18 @@
 
 .compass-icon {
 	background-image: url('../../images/icons/compass-icon.png');
+
+	@include media('retina2x') {
+		background-image: url('../../images/icons/compass-icon@2x.png');
+	}
 }
 
 .pill-icon {
 	background-image: url('../../images/icons/pill-icon.png');
+
+	@include media('retina2x') {
+		background-image: url('../../images/icons/pill-icon@2x.png');
+	}
 }
 
 .pill-icon, .compass-icon {

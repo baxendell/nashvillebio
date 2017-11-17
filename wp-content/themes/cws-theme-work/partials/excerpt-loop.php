@@ -125,7 +125,7 @@ $home = esc_attr( home_url() );
 
                                 <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                                     <meta itemprop="name" content="<?php echo $author_name; ?>">
-                                    <meta itemprop="logo" content="<?php bloginfo('template_url');?>/images/belluck-fox-logo.png">
+                                    <meta itemprop="logo" content="<?php bloginfo('template_url');?>/images/logo.png">
                                 </div>
 
 

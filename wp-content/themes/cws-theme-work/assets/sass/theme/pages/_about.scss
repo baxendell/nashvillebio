@@ -29,7 +29,7 @@
 }
 
 #publications {
-	@media screen and (min-width: 768px) {
+	@include media('>=tablet') {
 		background-image: url('../../images/about/publications-bg.jpg');
 		background-repeat: no-repeat;
 		background-position: right top;
@@ -38,6 +38,11 @@
 	h3 {
 		font-weight: 400;
 	}
+
+	@include media('>=tablet', 'retina2x') { 
+		background-image: url('../../images/about/publications-bg@2x.jpg');
+	}
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -254,6 +259,10 @@
 	display: block;
 	width: 24px;
 	height: 23px;
+
+	@include media('retina2x') {
+		background-image: url('../../images/linkedin-logo@2s.png');
+	}
 }
 
 .team-image {

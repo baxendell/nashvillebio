@@ -34,6 +34,38 @@
 	.page-template-contact & {
 		background-image: url('../../images/banners/contact-banner.jpg');
 	}
+
+	@include media('retina2x') { 
+	
+		.home & {
+			background-image: url('../../images/banners/home-banner@2x.jpg');
+		}
+
+		.page-template-about-us & {
+			background-image: url('../../images/banners/about-banner@2x.jpg');
+		}
+
+		.page-template-technology & {
+			background-image: url('../../images/banners/technology-bg@2x.jpg');
+		}
+
+		.page-template-expertise & {
+			background-image: url('../../images/banners/expertise-banner@2x.jpg');
+		}
+
+		.page-template-careers & {
+			background-image: url('../../images/banners/careers-banner@2x.jpg');
+		}
+
+		.page-template-partnering & {
+			background-image: url('../../images/banners/partnering-banner@2x.jpg');
+		}
+
+		.page-template-contact & {
+			background-image: url('../../images/banners/contact-banner@2x.jpg');
+		}
+	}
+
 }
 
 .site-logo {

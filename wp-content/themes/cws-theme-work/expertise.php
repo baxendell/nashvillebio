@@ -80,7 +80,7 @@ get_header() ?>
 				<ul class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active">
 
-						<img src="<?php bloginfo('template_url') ?>/images/icons/target-icon-1.png" alt="early stage target"/>
+						<img src="<?php bloginfo('template_url') ?>/images/icons/target-icon-1.png" srcset="<?php bloginfo('template_url') ?>/images/icons/target-icon-1.png 1x, <?php bloginfo('template_url') ?>/images/icons/target-icon-1@2x.png 2x" />
 
 						<h3 class="text-uppercase">Early Stage<br/> Target Prioritization</h3>
 
@@ -90,7 +90,8 @@ get_header() ?>
 
 					<li role="presentation">
 
-						<img src="<?php bloginfo('template_url') ?>/images/icons/target-icon-2.png" alt="target disease"/>
+						<img src="<?php bloginfo('template_url') ?>/images/icons/target-icon-2.png" srcset="<?php bloginfo('template_url') ?>/images/icons/target-icon-2.png 1x, <?php bloginfo('template_url') ?>/images/icons/target-icon-2@2x.png 2x" />
+
 
 						<h3 class="text-uppercase">Target Disease<br/> Deep Dives</h3>
 
@@ -100,7 +101,7 @@ get_header() ?>
 
 					<li role="presentation">
 
-						<img src="<?php bloginfo('template_url') ?>/images/icons/charts-icon.png" alt="cohort analysis"/>
+						<img src="<?php bloginfo('template_url') ?>/images/icons/charts-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/charts-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/charts-icon@2x.png 2x" />
 
 						<h3 class="text-uppercase">Cohort Analysis<br/> and Screening</h3>
 
@@ -144,7 +145,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png" alt="challenge"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png 1x, <?php bloginfo('template_url') ?>/images/expertise/thumbprint@2x.png 2x" />
 
 						</div>
 
@@ -156,7 +157,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/target.png" alt="approach"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/target.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/target.png 1x, <?php bloginfo('template_url') ?>/images/expertise/target@2x.png 2x" />
 
 						</div>
 
@@ -168,7 +169,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/checklist.png" alt="solution"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/checklist.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/checklist.png 1x, <?php bloginfo('template_url') ?>/images/expertise/checklist@2x.png 2x" />
 
 						</div>
 
@@ -190,7 +191,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png" alt="challenge"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png 1x, <?php bloginfo('template_url') ?>/images/expertise/thumbprint@2x.png 2x" />
 
 						</div>
 
@@ -202,7 +203,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/target.png" alt="approach"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/target.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/target.png 1x, <?php bloginfo('template_url') ?>/images/expertise/target@2x.png 2x" />
 
 						</div>
 
@@ -214,7 +215,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/checklist.png" alt="solution"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/checklist.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/checklist.png 1x, <?php bloginfo('template_url') ?>/images/expertise/checklist@2x.png 2x" />
 
 						</div>
 
@@ -236,7 +237,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png" alt="challenge"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/thumbprint.png 1x, <?php bloginfo('template_url') ?>/images/expertise/thumbprint@2x.png 2x" />
 
 						</div>
 
@@ -248,7 +249,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/target.png" alt="approach"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/target.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/target.png 1x, <?php bloginfo('template_url') ?>/images/expertise/target@2x.png 2x" />
 
 						</div>
 
@@ -260,7 +261,7 @@ get_header() ?>
 
 							</div>
 
-							<img src="<?php bloginfo('template_url') ?>/images/expertise/checklist.png" alt="solution"/>
+							<img src="<?php bloginfo('template_url') ?>/images/expertise/checklist.png" srcset="<?php bloginfo('template_url') ?>/images/expertise/checklist.png 1x, <?php bloginfo('template_url') ?>/images/expertise/checklist@2x.png 2x" />
 
 						</div>
 
