@@ -7,8 +7,8 @@
  * @license GPL 2.0
  */
 
-define( 'JS_VERS', '1.0.0' );
-define( 'CSS_VERS', '1.0.0' );
+define( 'JS_VERS', '1.0.1' );
+define( 'CSS_VERS', '1.0.1' );
 
 
 require_once STYLESHEETPATH . '/includes/walker.php';
@@ -31,7 +31,11 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
  */
 function nb_enqueue_scripts() {
 	wp_enqueue_style  ( 'nb-main',      get_template_directory_uri() . '/compiled/css/theme.css', false, CSS_VERS );
-	wp_enqueue_script ('google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pf9soCGDm_24PCp-qBqRCS6eAlKC1PY');
+	if(is_page_template('contact.php')) {
+		wp_enqueue_script ('google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pf9soCGDm_24PCp-qBqRCS6eAlKC1PY');
+		wp_enqueue_script ( 'map',  get_template_directory_uri() . '/compiled/js/map.js', array( 'jquery' ), JS_VERS, true );
+
+	}
 	wp_enqueue_script ( 'nb-theme-js',  get_template_directory_uri() . '/compiled/js/app.js', array( 'jquery' ), JS_VERS, true );
 }
 add_action( 'wp_enqueue_scripts', 'nb_enqueue_scripts' );

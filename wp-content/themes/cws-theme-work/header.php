@@ -42,8 +42,11 @@
 
 
 		<header id="main-header">
+			<?php if(is_front_page()):?>
 
-			<?php if(wp_is_mobile()): ?>
+			<div class="letter-bg"></div>
+
+			<?php endif; if(wp_is_mobile()): ?>
 
 			<nav id="mobile-nav" class="mobile-nav-links-container visible-xs">
 

@@ -7793,10 +7793,20 @@ p {
   padding: 17px 0;
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
+}
+
+#main-header .letter-bg {
+  background-image: url("../../images/banners/home-banner.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .home #main-header {
-  background-image: url("../../images/banners/home-banner.jpg");
+  overflow: hidden;
 }
 
 .page-template-about-us #main-header {
@@ -7824,8 +7834,12 @@ p {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  .home #main-header {
+  #main-header {
+    background-size: cover;
+  }
+  #main-header .letter-bg {
     background-image: url("../../images/banners/home-banner@2x.jpg");
+    background-size: cover;
   }
   .page-template-about-us #main-header {
     background-image: url("../../images/banners/about-banner@2x.jpg");
