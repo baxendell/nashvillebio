@@ -111,10 +111,14 @@
             background-color: transparent;
           }
         }
-        &.current_page_item {
+        &.current-menu-item {
           >a {
             background-color: transparent;
-            color: $white;
+            color: $lt-blue;
+
+            &:hover, &:focus {
+              color: $white;
+            }
           }
         }
       }

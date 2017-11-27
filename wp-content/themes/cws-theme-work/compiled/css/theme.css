@@ -7997,8 +7997,12 @@ p {
   background-color: transparent;
 }
 
-.navbar .dropdown-menu li.current_page_item > a {
+.navbar .dropdown-menu li.current-menu-item > a {
   background-color: transparent;
+  color: #1297a3;
+}
+
+.navbar .dropdown-menu li.current-menu-item > a:hover, .navbar .dropdown-menu li.current-menu-item > a:focus {
   color: #fff;
 }
 
