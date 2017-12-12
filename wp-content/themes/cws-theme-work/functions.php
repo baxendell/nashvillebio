@@ -7,8 +7,8 @@
  * @license GPL 2.0
  */
 
-define( 'JS_VERS', '1.0.1' );
-define( 'CSS_VERS', '1.0.1' );
+define( 'JS_VERS', '1.0.2' );
+define( 'CSS_VERS', '1.0.3' );
 
 
 require_once STYLESHEETPATH . '/includes/walker.php';

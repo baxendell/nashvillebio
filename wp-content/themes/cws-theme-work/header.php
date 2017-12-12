@@ -44,7 +44,9 @@
 		<header id="main-header">
 			<?php if(is_front_page()):?>
 
-			<div class="letter-bg"></div>
+			<div class="letter-bg-top"></div>
+
+			<div class="letter-bg-bottom"></div>
 
 			<?php endif; if(wp_is_mobile()): ?>
 

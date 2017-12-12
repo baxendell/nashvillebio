@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 	function myMap() {
 	  var mapCanvas = document.getElementById("contact-map");
 	  var mapOptions = {  
-	    center: new google.maps.LatLng(36.1460168, -86.8136989), 
+	    center: new google.maps.LatLng(36.145952, -86.809236), 
 	    zoom: 15,
 	    styles: [
 	    	{

@@ -7796,13 +7796,23 @@ p {
   position: relative;
 }
 
-#main-header .letter-bg {
-  background-image: url("../../images/banners/home-banner.jpg");
-  width: 100%;
-  height: 100%;
-  position: absolute;
+#main-header .letter-bg-top {
+  background-image: url("../../images/banners/home-banner-top.jpg");
   top: 0;
+  left: 0;
+}
+
+#main-header .letter-bg-bottom {
+  background-image: url("../../images/banners/home-banner-bottom.jpg");
+  bottom: 0;
   right: 0;
+}
+
+#main-header .letter-bg-bottom, #main-header .letter-bg-top {
+  background-color: #012636;
+  width: 100%;
+  height: 50%;
+  position: absolute;
 }
 
 .home #main-header {
@@ -7837,8 +7847,12 @@ p {
   #main-header {
     background-size: cover;
   }
-  #main-header .letter-bg {
-    background-image: url("../../images/banners/home-banner@2x.jpg");
+  #main-header .letter-bg-top {
+    background-image: url("../../images/banners/home-banner-top@2x.jpg");
+    background-size: cover;
+  }
+  #main-header .letter-bg-bottom {
+    background-image: url("../../images/banners/home-banner-bottom@2x.jpg");
     background-size: cover;
   }
   .page-template-about-us #main-header {

@@ -1972,7 +1972,8 @@ jQuery(document).ready(function($) {
 	};
 
 	$( document ).mousemove( function( e ) {
-	  $( '.letter-bg' ).parallax( -30 , e );
+	  $( '.letter-bg-top' ).parallax( -30 , e );
+	  $('.letter-bg-bottom').parallax(30, e);
 	});
 
 	//Smooth Scrolling
