@@ -1966,14 +1966,14 @@ jQuery(document).ready(function($) {
 		TweenLite.to( $el, 0.2, 
 		{
 			x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance ),
-			y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
+			//y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
 		});
 
 	};
 
 	$( document ).mousemove( function( e ) {
-	  $( '.letter-bg-top' ).parallax( -30 , e );
-	  $('.letter-bg-bottom').parallax(30, e);
+	  $( '.letter-bg-top' ).parallax( -15 , e );
+	  $('.letter-bg-bottom').parallax(15, e);
 	});
 
 	//Smooth Scrolling
