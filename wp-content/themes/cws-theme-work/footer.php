@@ -30,7 +30,7 @@
 
           <div class="col-xs-12 col-md-2">
 
-            <a href="#" target="_blank" class="linked-in-icon">
+            <a href="https://www.linkedin.com/company/10398058/" target="_blank" class="linked-in-icon">
 
               <img src="<?php bloginfo('template_url') ?>/images/icons/linkdedin-icon.png" srcset="<?php bloginfo('template_url') ?>/images/icons/linkdedin-icon.png 1x, <?php bloginfo('template_url') ?>/images/icons/linkdedin-icon@2x.png 2x" />
 

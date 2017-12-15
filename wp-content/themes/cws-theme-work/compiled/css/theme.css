@@ -9233,9 +9233,16 @@ p {
   height: 23px;
 }
 
+#contact .fa-linkedin {
+  background-image: url("../../images/linkedin-logo-blue.png");
+}
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .fa-linkedin {
-    background-image: url("../../images/linkedin-logo@2s.png");
+    background-image: url("../../images/linkedin-logo@2x.png");
+  }
+  #contact .fa-linkedin {
+    background-image: url("../../images/linkedin-logo-blue@2x.png");
   }
 }
 
@@ -9274,6 +9281,10 @@ p {
 #contact .address {
   color: #034e63;
   margin: 58px 0 28px;
+}
+
+#contact .linkedin {
+  display: inline-block;
 }
 
 #contact-map {
@@ -9519,8 +9530,6 @@ section {
 }
 
 .disclaimer-box {
-  border: 2px solid #f7f7f7;
-  border-radius: 10px;
   font-size: 16px;
   font-size: 1.6rem;
   color: #0095a7;
@@ -9567,7 +9576,7 @@ section {
   border: 2px solid #f7f7f7;
   border-radius: 10px;
   position: relative;
-  padding: 56px 20px;
+  padding: 56px 32px;
   text-align: center;
   background-color: #fff;
 }

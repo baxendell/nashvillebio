@@ -29,6 +29,8 @@ get_header();
 
 				<p>2525 West End Ave, Suite 930<br/>Nashville, TN 37203<br/>(615) 343-0212</p>
 
+				<a class="linkedin" href="https://www.linkedin.com/company/10398058/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
 			</div>
 
 		</div>

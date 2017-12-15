@@ -259,9 +259,17 @@
 	display: block;
 	width: 24px;
 	height: 23px;
+	
+	#contact & {
+		background-image: url('../../images/linkedin-logo-blue.png');
+	}
 
 	@include media('retina2x') {
-		background-image: url('../../images/linkedin-logo@2s.png');
+		background-image: url('../../images/linkedin-logo@2x.png');
+
+		#contact & {
+			background-image: url('../../images/linkedin-logo-blue@2x.png');
+		}		
 	}
 }
 
