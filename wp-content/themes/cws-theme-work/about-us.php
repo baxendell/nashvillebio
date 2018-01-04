@@ -54,9 +54,9 @@ get_header() ?>
 
 				 <!-- Nav tabs -->
 				  <ul class="nav nav-tabs" role="tablist">
-				    <li role="presentation" class="active"><a href="#mgmt" aria-controls="mgm" role="tab" data-toggle="tab">Management</a></li>
-				    <li role="presentation"><a href="#board" aria-controls="board" role="tab" data-toggle="tab">Board of Directors</a></li>
-				    <li role="presentation"><a href="#sab" aria-controls="sab" role="tab" data-toggle="tab">Scientific Advisory Board</a></li>
+				  	<li role="presentation" class="active"><a href="#board" aria-controls="board" role="tab" data-toggle="tab">Board of Directors</a></li>
+				    <li role="presentation"><a href="#management" aria-controls="mgm" role="tab" data-toggle="tab">Management</a></li>
+				    <!--<li role="presentation"><a href="#sab" aria-controls="sab" role="tab" data-toggle="tab">Scientific Advisory Board</a></li>-->
 				  </ul>				
 
 			</div>
@@ -91,6 +91,8 @@ get_header() ?>
 
 					    if($i == 1) {
 					    	$active = 'active';
+					    } else {
+					    	$active = '';
 					    }
 			            ?>
 				    <div role="tabpanel" class="tab-pane fade in <?php echo $active; ?>" id="<?php echo $term->slug; ?>">

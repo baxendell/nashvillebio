@@ -43,9 +43,9 @@ get_header();
 
 				<div class="bottom-contact">
 
-					<p>Partnership Opportunities<br/><a href="mailto:customers@nashvillebiosciences.com">customers@nashvillebiosciences.com</a></p>
+					<p>Partnership Opportunities<br/><a href="mailto:customers@nashville.bio">customers@nashville.bio</a></p>
 
-					<p>General Inquiries<br/><a href="mailto:info@nashvillebiosciences.com">info@nashvillebiosciences.com</a></p>
+					<p>General Inquiries<br/><a href="mailto:info@nashville.bio">info@nashville.bio</a></p>
 
 				</div>
 
@@ -57,9 +57,9 @@ get_header();
 
 				<div class="bottom-contact">
 
-					<p>Careers Inquiries<br/><a href="mailto:careers@nashvillebiosciences.com">careers@nashvillebiosciences.com</a></p>
+					<p>Careers Inquiries<br/><a href="mailto:careers@nashville.bio">careers@nashville.bio</a></p>
 
-					<p>Media Inquiries<br/><a href="mailto:media@nashvillebiosciences.com">media@nashvillebiosciences.com</a></p>
+					<p>Media Inquiries<br/><a href="mailto:media@nashville.bio">media@nashville.bio</a></p>
 
 				</div>				
 

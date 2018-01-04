@@ -32,6 +32,7 @@ get_header() ?>
 
 				<?php endwhile; endif; ?>
 
+
 			</div>
 
 		</div>
@@ -40,7 +41,7 @@ get_header() ?>
 
 			<div id="in-depth">
 
-				<h2 class="text-center">An In-depth look at BioVU</h2>
+				<h2 class="text-center">An In-depth Look at BioVU</h2>
 
 				<div class="in-depth-grid clearfix hidden-xs hidden-sm">
 
@@ -91,6 +92,21 @@ get_header() ?>
 
 			</div>
 
+			<div class="row">
+				<div class="col-md-9 col-md-offset-1">
+					<h3>Methodology</h3>
+					<p>Samples are donated via opt-in process and consented for translational research and scanned via a custom-developed sample acceptance program that includes automated exclusion based on specific criteria.</p>
+
+					<p>Once a sample passes the necessary criteria, it is accepted by the program. Acceptance of a sample triggers the encryption program to assign a unique research ID number to the sample. Genetic samples are linked to the corresponding EHRs in which identifying information has been deleted to protect patient privacy.</p>
+
+					<div class="col-md-8 col-md-offset-2">
+						<img class="img-responsive alignnone wp-image-63 size-full" style="margin-top: 100px; margin-bottom: 100px;" src="http://nashvillebio.wpengine.com/wp-content/uploads/2017/11/tech-method.png" />
+					</div>
+				
+				</div>
+			
+			</div>
+
 			<div class="col-md-9 col-md-offset-1">
 
 				<?php the_field('biovu_content') ?>
@@ -101,6 +117,7 @@ get_header() ?>
 
 		<div class="row">
 
+<!--
 			<div class="col-md-7 center-col">
 
 				<div class="disclaimer-box">
@@ -118,6 +135,7 @@ get_header() ?>
 				</div>
 
 			</div>
+-->
 
 		</div>
 

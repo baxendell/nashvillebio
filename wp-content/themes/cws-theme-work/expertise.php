@@ -187,7 +187,7 @@ get_header() ?>
 
 							<div class="project-content">
 
-								<?php the_field('early_target_row_1') ?>
+								<?php the_field('target_disease_row_1') ?>
 
 							</div>
 
@@ -199,7 +199,7 @@ get_header() ?>
 
 							<div class="project-content">
 
-								<?php the_field('early_target_row_2') ?>
+								<?php the_field('target_disease_row_2') ?>
 
 							</div>
 
@@ -211,7 +211,7 @@ get_header() ?>
 
 							<div class="project-content">
 
-								<?php the_field('early_target_row_3') ?>
+								<?php the_field('target_disease_row_3') ?>
 
 							</div>
 
@@ -233,7 +233,7 @@ get_header() ?>
 
 							<div class="project-content">
 
-								<?php the_field('early_target_row_1') ?>
+								<?php the_field('cohort_row_1') ?>
 
 							</div>
 
@@ -245,7 +245,7 @@ get_header() ?>
 
 							<div class="project-content">
 
-								<?php the_field('early_target_row_2') ?>
+								<?php the_field('cohort_row_2') ?>
 
 							</div>
 
@@ -257,7 +257,7 @@ get_header() ?>
 
 							<div class="project-content">
 
-								<?php the_field('early_target_row_3') ?>
+								<?php the_field('cohort_row_3') ?>
 
 							</div>
 
