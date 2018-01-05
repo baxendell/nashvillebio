@@ -54,8 +54,8 @@ get_header() ?>
 
 				 <!-- Nav tabs -->
 				  <ul class="nav nav-tabs" role="tablist">
-				  	<li role="presentation" class="active"><a href="#board" aria-controls="board" role="tab" data-toggle="tab">Board of Directors</a></li>
-				    <li role="presentation"><a href="#management" aria-controls="mgm" role="tab" data-toggle="tab">Management</a></li>
+				  	<li role="presentation" class="active"><a href="#management" aria-controls="mgm" role="tab" data-toggle="tab">Management</a></li>
+				  	<li role="presentation"><a href="#board" aria-controls="board" role="tab" data-toggle="tab">Board of Directors</a></li>
 				    <!--<li role="presentation"><a href="#sab" aria-controls="sab" role="tab" data-toggle="tab">Scientific Advisory Board</a></li>-->
 				  </ul>				
 
@@ -89,7 +89,7 @@ get_header() ?>
 					                ),
 					            ));
 
-					    if($i == 1) {
+					    if($i == 2) {
 					    	$active = 'active';
 					    } else {
 					    	$active = '';
@@ -107,8 +107,10 @@ get_header() ?>
 			    			</div>
 				    		<h3><?php the_title() ?></h3>
 				    		<h4><?php the_field('position') ?></h4>
-
+				    		<?php if(get_field('linkedin_link')): ?>
 				    		<a class="linkedin" href="<?php the_field('linkedin_link') ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+				    		<?php endif ?>
 
 			    		</div>
 					        <?php endwhile; endif; wp_reset_postdata(); ?>

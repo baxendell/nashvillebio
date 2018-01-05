@@ -1,0 +1,5 @@
+1.) Footer Navigation, got rid of "locations" in the nav since there is only one location.
+
+2.) Did not add video on homepage since I didn't see any added yet. It can be added later via content area.  May not be able to float text around it.
+
+3.)

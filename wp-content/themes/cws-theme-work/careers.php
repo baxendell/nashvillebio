@@ -18,7 +18,7 @@ get_header() ?>
 
 			<div class="col-md-offset-1 col-md-5">
 
-				<h2>Our Careers</h2>
+				<h2>Join Us</h2>
 
 				<?php the_content() ?>
 
